@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E0D48CE168FC4D600CB50F9 /* SingleNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D48CD168FC4D600CB50F9 /* SingleNumberViewController.m */; };
 		7E3C9B481689770E003726D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3C9B471689770E003726D3 /* UIKit.framework */; };
 		7E3C9B4A1689770E003726D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3C9B491689770E003726D3 /* Foundation.framework */; };
 		7E3C9B4C1689770E003726D3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3C9B4B1689770E003726D3 /* CoreGraphics.framework */; };
@@ -18,10 +19,11 @@
 		7E3C9B5E1689770E003726D3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E3C9B5D1689770E003726D3 /* Default-568h@2x.png */; };
 		7E3C9B611689770E003726D3 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3C9B5F1689770E003726D3 /* MainStoryboard_iPhone.storyboard */; };
 		7E3C9B641689770E003726D3 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3C9B621689770E003726D3 /* MainStoryboard_iPad.storyboard */; };
-		7E3C9B671689770E003726D3 /* GeneratorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3C9B661689770E003726D3 /* GeneratorViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E0D48CC168FC4D600CB50F9 /* SingleNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleNumberViewController.h; sourceTree = "<group>"; };
+		7E0D48CD168FC4D600CB50F9 /* SingleNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleNumberViewController.m; sourceTree = "<group>"; };
 		7E3C9B431689770E003726D3 /* Number Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Number Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E3C9B471689770E003726D3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7E3C9B491689770E003726D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,8 +39,6 @@
 		7E3C9B5D1689770E003726D3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7E3C9B601689770E003726D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		7E3C9B631689770E003726D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		7E3C9B651689770E003726D3 /* GeneratorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratorViewController.h; sourceTree = "<group>"; };
-		7E3C9B661689770E003726D3 /* GeneratorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratorViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +89,8 @@
 				7E3C9B571689770E003726D3 /* GeneratorAppDelegate.m */,
 				7E3C9B5F1689770E003726D3 /* MainStoryboard_iPhone.storyboard */,
 				7E3C9B621689770E003726D3 /* MainStoryboard_iPad.storyboard */,
-				7E3C9B651689770E003726D3 /* GeneratorViewController.h */,
-				7E3C9B661689770E003726D3 /* GeneratorViewController.m */,
+				7E0D48CC168FC4D600CB50F9 /* SingleNumberViewController.h */,
+				7E0D48CD168FC4D600CB50F9 /* SingleNumberViewController.m */,
 				7E3C9B4E1689770E003726D3 /* Supporting Files */,
 			);
 			path = "Number Generator";
@@ -179,7 +179,7 @@
 			files = (
 				7E3C9B541689770E003726D3 /* main.m in Sources */,
 				7E3C9B581689770E003726D3 /* GeneratorAppDelegate.m in Sources */,
-				7E3C9B671689770E003726D3 /* GeneratorViewController.m in Sources */,
+				7E0D48CE168FC4D600CB50F9 /* SingleNumberViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +271,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Number Generator/Number Generator-Prefix.pch";
 				INFOPLIST_FILE = "Number Generator/Number Generator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -282,6 +283,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Number Generator/Number Generator-Prefix.pch";
 				INFOPLIST_FILE = "Number Generator/Number Generator-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -306,6 +308,7 @@
 				7E3C9B6C1689770E003726D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
