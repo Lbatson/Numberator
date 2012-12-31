@@ -13,9 +13,6 @@
 @end
 
 @implementation SingleNumberViewController
-{
-    Generator *generator;
-}
 
 @synthesize beginRange = _beginRange;
 @synthesize endRange = _endRange;
@@ -23,6 +20,7 @@
 @synthesize singleNumberDisplay = _singleNumberDisplay;
 @synthesize singleTap = _singleTap;
 @synthesize validator = _validator;
+@synthesize generator = _generator;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -37,7 +35,7 @@
 {
     [super viewDidLoad];
 	// Additional setup after loading the view.
-    generator = [Generator sharedGenerator];
+    _generator = [Generator sharedGenerator];
     _validator = [[Validator alloc]init];
     _singleTap = [[UITapGestureRecognizer alloc]
                                    initWithTarget:self
@@ -51,7 +49,7 @@
     if (_alert) {
         [_alert show];
     } else {
-        [self displayNumber:[generator generateSingleNumberWithRangeStarting:
+        [self displayNumber:[_generator generateSingleNumberWithRangeStarting:
                              [NSNumber numberWithFloat:[_beginRange.text floatValue]] andEnding:
                              [NSNumber numberWithFloat:[_endRange.text floatValue]]]];
     }
@@ -88,6 +86,6 @@
     [self setBeginRange:nil];
     [self setEndRange:nil];
     [self setSingleNumberDisplay:nil];
-    [super viewDidUnload];
 }
+
 @end

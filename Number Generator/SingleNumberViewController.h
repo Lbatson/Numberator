@@ -16,7 +16,19 @@
 @property (weak, nonatomic) IBOutlet UITextField *endRange;
 @property (strong, nonatomic) UIAlertView *alert;
 @property (weak, nonatomic) IBOutlet UILabel *singleNumberDisplay;
+@property (weak, nonatomic) IBOutlet UISwitch *distinctSwitch;
 @property (strong, nonatomic) UITapGestureRecognizer *singleTap;
 @property (strong, nonatomic) Validator *validator;
+@property (strong, nonatomic) Generator *generator;
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil;
+- (void)viewDidLoad;
+- (IBAction)generatePressed:(UIButton *)sender;
+- (void)displayNumber:(NSNumber *)number;
+- (IBAction)clearInputPressed:(UIButton *)sender;
+- (void)clearInput;
+- (void)dismissKeyboard;
+- (void)didReceiveMemoryWarning;
+- (void)viewDidUnload;
 
 @end
