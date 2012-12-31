@@ -19,6 +19,7 @@
 		7E3C9B5E1689770E003726D3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E3C9B5D1689770E003726D3 /* Default-568h@2x.png */; };
 		7E3C9B611689770E003726D3 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3C9B5F1689770E003726D3 /* MainStoryboard_iPhone.storyboard */; };
 		7E3C9B641689770E003726D3 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3C9B621689770E003726D3 /* MainStoryboard_iPad.storyboard */; };
+		7E6E70101690F5F00031F6D3 /* Generator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6E700F1690F5F00031F6D3 /* Generator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		7E3C9B5D1689770E003726D3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7E3C9B601689770E003726D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		7E3C9B631689770E003726D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		7E6E700E1690F5F00031F6D3 /* Generator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Generator.h; sourceTree = "<group>"; };
+		7E6E700F1690F5F00031F6D3 /* Generator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Generator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 			children = (
 				7E3C9B561689770E003726D3 /* GeneratorAppDelegate.h */,
 				7E3C9B571689770E003726D3 /* GeneratorAppDelegate.m */,
+				7E6E700E1690F5F00031F6D3 /* Generator.h */,
+				7E6E700F1690F5F00031F6D3 /* Generator.m */,
 				7E3C9B5F1689770E003726D3 /* MainStoryboard_iPhone.storyboard */,
 				7E3C9B621689770E003726D3 /* MainStoryboard_iPad.storyboard */,
 				7E0D48CC168FC4D600CB50F9 /* SingleNumberViewController.h */,
@@ -180,6 +185,7 @@
 				7E3C9B541689770E003726D3 /* main.m in Sources */,
 				7E3C9B581689770E003726D3 /* GeneratorAppDelegate.m in Sources */,
 				7E0D48CE168FC4D600CB50F9 /* SingleNumberViewController.m in Sources */,
+				7E6E70101690F5F00031F6D3 /* Generator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +277,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Number Generator/Number Generator-Prefix.pch";
 				INFOPLIST_FILE = "Number Generator/Number Generator-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -283,7 +289,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Number Generator/Number Generator-Prefix.pch";
 				INFOPLIST_FILE = "Number Generator/Number Generator-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
