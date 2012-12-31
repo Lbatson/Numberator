@@ -13,16 +13,28 @@
 @synthesize singleNumber = _singleNumber;
 @synthesize listOfNumbers = _listOfNumbers;
 
++ (id)sharedGenerator {
+    static Generator *generator = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        generator = [[self alloc] init];
+    });
+    return generator;
+}
+
 - (id)init
 {
-    self = [super init];
+    if (self = [super init]){
+        // Additional setup for generator singleton
+    }
     return self;
 }
 
 - (NSNumber *)generateSingleNumberWithRangeStarting:(NSNumber *)start andEnding:(NSNumber *)end
 {
     int range = ([end integerValue]-[start integerValue])+1;
-    return [NSNumber numberWithInt:(arc4random()%range + [start integerValue])];
+    _singleNumber = [NSNumber numberWithInt:(arc4random()%range + [start integerValue])];
+    return _singleNumber;
 }
 
 - (NSArray *)generateListOfNumberswithRangeStarting:(NSNumber *)start andEnding:(NSNumber *)end withTotalToGenerate:(NSInteger)total

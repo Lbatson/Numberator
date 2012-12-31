@@ -13,6 +13,7 @@
 @property (nonatomic,strong) NSNumber *singleNumber;
 @property (nonatomic,strong) NSArray *listOfNumbers;
 
++ (id)sharedGenerator;
 - (NSNumber *)generateSingleNumberWithRangeStarting:(NSNumber *)start andEnding:(NSNumber *)end;
 - (NSArray *)generateListOfNumberswithRangeStarting:(NSNumber *)start andEnding:(NSNumber *)end withTotalToGenerate:(NSInteger)total;
 

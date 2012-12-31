@@ -13,6 +13,9 @@
 @end
 
 @implementation SingleNumberViewController
+{
+    Generator *generator;
+}
 
 @synthesize beginRange = _beginRange;
 @synthesize endRange = _endRange;
@@ -20,9 +23,6 @@
 @synthesize alertString = _alertString;
 @synthesize singleNumberDisplay = _singleNumberDisplay;
 @synthesize singleTap = _singleTap;
-
-// Generator object
-@synthesize generator = _generator;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -37,7 +37,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    _generator = [[Generator alloc]init];
+    generator = [Generator sharedGenerator];
     _singleTap = [[UITapGestureRecognizer alloc]
                                    initWithTarget:self
                                    action:@selector(dismissKeyboard)];
@@ -47,7 +47,7 @@
 - (IBAction)generatePressed:(UIButton *)sender
 {
     if ([self inputValidforBegin:_beginRange.text andEnd:_endRange.text]) {
-        [self displayNumber:[_generator generateSingleNumberWithRangeStarting:
+        [self displayNumber:[generator generateSingleNumberWithRangeStarting:
                              [NSNumber numberWithFloat:[_beginRange.text floatValue]] andEnding:
                              [NSNumber numberWithFloat:[_endRange.text floatValue]]]];
     }
@@ -91,7 +91,7 @@
 
 - (BOOL)limitCheck:(NSString *)string
 {
-    if ([string integerValue] < 10000) {
+    if ([string integerValue] <= 10000) {
         return TRUE;
     }
     return FALSE;
@@ -115,7 +115,7 @@
             _alertString = @"Invalid numbers for range";
             break;
         case 2:
-            _alertString = @"Number limit must be less than 10,000";
+            _alertString = @"Numbers cannot be greater than 10,000";
             break;
         case 3:
             _alertString = @"Range is not valid";

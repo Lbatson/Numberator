@@ -18,7 +18,4 @@
 @property (weak, nonatomic) IBOutlet UILabel *singleNumberDisplay;
 @property (strong, nonatomic) UITapGestureRecognizer *singleTap;
 
-// Generator object
-@property (strong,nonatomic) Generator *generator;
-
 @end
