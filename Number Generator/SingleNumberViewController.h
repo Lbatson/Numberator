@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Validator.h"
 #import "Generator.h"
 
 @interface SingleNumberViewController : UIViewController <UITextFieldDelegate>
@@ -14,8 +15,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *beginRange;
 @property (weak, nonatomic) IBOutlet UITextField *endRange;
 @property (strong, nonatomic) UIAlertView *alert;
-@property (strong, nonatomic) NSString *alertString;
 @property (weak, nonatomic) IBOutlet UILabel *singleNumberDisplay;
 @property (strong, nonatomic) UITapGestureRecognizer *singleTap;
+@property (strong, nonatomic) Validator *validator;
 
 @end
