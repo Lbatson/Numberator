@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		7E0D48CE168FC4D600CB50F9 /* SingleNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D48CD168FC4D600CB50F9 /* SingleNumberViewController.m */; };
+		7E32A8F216924C8C00BB406B /* greyButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E32A8F116924C8C00BB406B /* greyButton.png */; };
+		7E32A8F516924EA900BB406B /* GeneratorChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E32A8F416924EA900BB406B /* GeneratorChoiceViewController.m */; };
+		7E32A8FC169250FD00BB406B /* greyButtonHighlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E32A8FB169250FD00BB406B /* greyButtonHighlight.png */; };
+		7E32A90016925C5A00BB406B /* greyButtonHighlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E32A8FF16925C5A00BB406B /* greyButtonHighlight@2x.png */; };
+		7E32A90216925C7B00BB406B /* greyButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E32A90116925C7B00BB406B /* greyButton@2x.png */; };
+		7E32A90716925CAF00BB406B /* blueButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E32A90316925CAF00BB406B /* blueButton.png */; };
+		7E32A90816925CAF00BB406B /* blueButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E32A90416925CAF00BB406B /* blueButton@2x.png */; };
+		7E32A90916925CAF00BB406B /* blueButtonHighlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E32A90516925CAF00BB406B /* blueButtonHighlight.png */; };
+		7E32A90A16925CAF00BB406B /* blueButtonHighlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E32A90616925CAF00BB406B /* blueButtonHighlight@2x.png */; };
+		7E32A9101692733300BB406B /* Images.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E32A90F1692733300BB406B /* Images.m */; };
+		7E32A9131692796B00BB406B /* debut_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E32A9111692796B00BB406B /* debut_dark.png */; };
+		7E32A9141692796B00BB406B /* debut_dark@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E32A9121692796B00BB406B /* debut_dark@2X.png */; };
 		7E3C9B481689770E003726D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3C9B471689770E003726D3 /* UIKit.framework */; };
 		7E3C9B4A1689770E003726D3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3C9B491689770E003726D3 /* Foundation.framework */; };
 		7E3C9B4C1689770E003726D3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3C9B4B1689770E003726D3 /* CoreGraphics.framework */; };
@@ -27,6 +39,20 @@
 /* Begin PBXFileReference section */
 		7E0D48CC168FC4D600CB50F9 /* SingleNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleNumberViewController.h; sourceTree = "<group>"; };
 		7E0D48CD168FC4D600CB50F9 /* SingleNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleNumberViewController.m; sourceTree = "<group>"; };
+		7E32A8F116924C8C00BB406B /* greyButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greyButton.png; sourceTree = "<group>"; };
+		7E32A8F316924EA900BB406B /* GeneratorChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneratorChoiceViewController.h; sourceTree = "<group>"; };
+		7E32A8F416924EA900BB406B /* GeneratorChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneratorChoiceViewController.m; sourceTree = "<group>"; };
+		7E32A8FB169250FD00BB406B /* greyButtonHighlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greyButtonHighlight.png; sourceTree = "<group>"; };
+		7E32A8FF16925C5A00BB406B /* greyButtonHighlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greyButtonHighlight@2x.png"; sourceTree = "<group>"; };
+		7E32A90116925C7B00BB406B /* greyButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greyButton@2x.png"; sourceTree = "<group>"; };
+		7E32A90316925CAF00BB406B /* blueButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueButton.png; sourceTree = "<group>"; };
+		7E32A90416925CAF00BB406B /* blueButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueButton@2x.png"; sourceTree = "<group>"; };
+		7E32A90516925CAF00BB406B /* blueButtonHighlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueButtonHighlight.png; sourceTree = "<group>"; };
+		7E32A90616925CAF00BB406B /* blueButtonHighlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueButtonHighlight@2x.png"; sourceTree = "<group>"; };
+		7E32A90E1692733300BB406B /* Images.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Images.h; sourceTree = "<group>"; };
+		7E32A90F1692733300BB406B /* Images.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Images.m; sourceTree = "<group>"; };
+		7E32A9111692796B00BB406B /* debut_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = debut_dark.png; sourceTree = "<group>"; };
+		7E32A9121692796B00BB406B /* debut_dark@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "debut_dark@2X.png"; sourceTree = "<group>"; };
 		7E3C9B431689770E003726D3 /* Number Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Number Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E3C9B471689770E003726D3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7E3C9B491689770E003726D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,6 +90,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E32A8F016924C6D00BB406B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7E32A90316925CAF00BB406B /* blueButton.png */,
+				7E32A90416925CAF00BB406B /* blueButton@2x.png */,
+				7E32A90516925CAF00BB406B /* blueButtonHighlight.png */,
+				7E32A90616925CAF00BB406B /* blueButtonHighlight@2x.png */,
+				7E32A9111692796B00BB406B /* debut_dark.png */,
+				7E32A9121692796B00BB406B /* debut_dark@2X.png */,
+				7E32A8F116924C8C00BB406B /* greyButton.png */,
+				7E32A90116925C7B00BB406B /* greyButton@2x.png */,
+				7E32A8FB169250FD00BB406B /* greyButtonHighlight.png */,
+				7E32A8FF16925C5A00BB406B /* greyButtonHighlight@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		7E3C9B381689770E003726D3 = {
 			isa = PBXGroup;
 			children = (
@@ -96,16 +139,21 @@
 			children = (
 				7E3C9B561689770E003726D3 /* GeneratorAppDelegate.h */,
 				7E3C9B571689770E003726D3 /* GeneratorAppDelegate.m */,
+				7E32A90E1692733300BB406B /* Images.h */,
+				7E32A90F1692733300BB406B /* Images.m */,
 				7E6E700E1690F5F00031F6D3 /* Generator.h */,
 				7E6E700F1690F5F00031F6D3 /* Generator.m */,
 				7EF027441691F92C00815B93 /* Validator.h */,
 				7EF027451691F92C00815B93 /* Validator.m */,
 				7E3C9B5F1689770E003726D3 /* MainStoryboard_iPhone.storyboard */,
 				7E3C9B621689770E003726D3 /* MainStoryboard_iPad.storyboard */,
+				7E32A8F316924EA900BB406B /* GeneratorChoiceViewController.h */,
+				7E32A8F416924EA900BB406B /* GeneratorChoiceViewController.m */,
 				7E0D48CC168FC4D600CB50F9 /* SingleNumberViewController.h */,
 				7E0D48CD168FC4D600CB50F9 /* SingleNumberViewController.m */,
 				7E62F396169224E100401458 /* NumberListViewController.h */,
 				7E62F397169224E100401458 /* NumberListViewController.m */,
+				7E32A8F016924C6D00BB406B /* Images */,
 				7E3C9B4E1689770E003726D3 /* Supporting Files */,
 			);
 			path = "Number Generator";
@@ -182,6 +230,16 @@
 				7E3C9B5E1689770E003726D3 /* Default-568h@2x.png in Resources */,
 				7E3C9B611689770E003726D3 /* MainStoryboard_iPhone.storyboard in Resources */,
 				7E3C9B641689770E003726D3 /* MainStoryboard_iPad.storyboard in Resources */,
+				7E32A8F216924C8C00BB406B /* greyButton.png in Resources */,
+				7E32A8FC169250FD00BB406B /* greyButtonHighlight.png in Resources */,
+				7E32A90016925C5A00BB406B /* greyButtonHighlight@2x.png in Resources */,
+				7E32A90216925C7B00BB406B /* greyButton@2x.png in Resources */,
+				7E32A90716925CAF00BB406B /* blueButton.png in Resources */,
+				7E32A90816925CAF00BB406B /* blueButton@2x.png in Resources */,
+				7E32A90916925CAF00BB406B /* blueButtonHighlight.png in Resources */,
+				7E32A90A16925CAF00BB406B /* blueButtonHighlight@2x.png in Resources */,
+				7E32A9131692796B00BB406B /* debut_dark.png in Resources */,
+				7E32A9141692796B00BB406B /* debut_dark@2X.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +256,8 @@
 				7E6E70101690F5F00031F6D3 /* Generator.m in Sources */,
 				7EF027461691F92C00815B93 /* Validator.m in Sources */,
 				7E62F398169224E100401458 /* NumberListViewController.m in Sources */,
+				7E32A8F516924EA900BB406B /* GeneratorChoiceViewController.m in Sources */,
+				7E32A9101692733300BB406B /* Images.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
