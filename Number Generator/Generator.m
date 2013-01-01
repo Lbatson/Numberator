@@ -37,8 +37,12 @@
     return _singleNumber;
 }
 
-- (NSArray *)generateListOfNumberswithRangeStarting:(NSNumber *)start andEnding:(NSNumber *)end withTotalToGenerate:(NSInteger)total
+- (NSMutableArray *)generateListOfNumberswithRangeStarting:(NSNumber *)start andEnding:(NSNumber *)end withTotalToGenerate:(NSInteger)total
 {
+    _listOfNumbers = [NSMutableArray array];
+    for (int i = 0; i < total; i++) {
+        [_listOfNumbers addObject:[self generateSingleNumberWithRangeStarting:start andEnding:end]];
+    }
     return _listOfNumbers;
 }
 

@@ -13,6 +13,8 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *singleNumberButton;
 @property (weak, nonatomic) IBOutlet UIButton *numberListButton;
+@property (weak, nonatomic) IBOutlet UIButton *settingsButton;
+@property (strong, nonatomic) NSArray *buttonArray;
 @property (strong, nonatomic) Images *image;
 
 @end

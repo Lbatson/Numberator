@@ -33,6 +33,7 @@
 		7E3C9B641689770E003726D3 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3C9B621689770E003726D3 /* MainStoryboard_iPad.storyboard */; };
 		7E62F398169224E100401458 /* NumberListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E62F397169224E100401458 /* NumberListViewController.m */; };
 		7E6E70101690F5F00031F6D3 /* Generator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6E700F1690F5F00031F6D3 /* Generator.m */; };
+		7EE7A8D0169370E70045A6AB /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE7A8CF169370E70045A6AB /* SettingsViewController.m */; };
 		7EF027461691F92C00815B93 /* Validator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF027451691F92C00815B93 /* Validator.m */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,8 @@
 		7E62F397169224E100401458 /* NumberListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberListViewController.m; sourceTree = "<group>"; };
 		7E6E700E1690F5F00031F6D3 /* Generator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Generator.h; sourceTree = "<group>"; };
 		7E6E700F1690F5F00031F6D3 /* Generator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Generator.m; sourceTree = "<group>"; };
+		7EE7A8CE169370E70045A6AB /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		7EE7A8CF169370E70045A6AB /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		7EF027441691F92C00815B93 /* Validator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Validator.h; sourceTree = "<group>"; };
 		7EF027451691F92C00815B93 /* Validator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Validator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,6 +156,8 @@
 				7E0D48CD168FC4D600CB50F9 /* SingleNumberViewController.m */,
 				7E62F396169224E100401458 /* NumberListViewController.h */,
 				7E62F397169224E100401458 /* NumberListViewController.m */,
+				7EE7A8CE169370E70045A6AB /* SettingsViewController.h */,
+				7EE7A8CF169370E70045A6AB /* SettingsViewController.m */,
 				7E32A8F016924C6D00BB406B /* Images */,
 				7E3C9B4E1689770E003726D3 /* Supporting Files */,
 			);
@@ -258,6 +263,7 @@
 				7E62F398169224E100401458 /* NumberListViewController.m in Sources */,
 				7E32A8F516924EA900BB406B /* GeneratorChoiceViewController.m in Sources */,
 				7E32A9101692733300BB406B /* Images.m in Sources */,
+				7EE7A8D0169370E70045A6AB /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

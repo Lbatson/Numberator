@@ -16,6 +16,8 @@
 
 @synthesize singleNumberButton = _singleNumberButton;
 @synthesize numberListButton = _numberListButton;
+@synthesize settingsButton = _settingsButton;
+@synthesize buttonArray = _buttonArray;
 @synthesize image = _image;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -31,12 +33,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     _image = [[Images alloc]init];
-    [_singleNumberButton setBackgroundImage:_image.greyButton forState:UIControlStateNormal];
-    [_singleNumberButton setBackgroundImage:_image.greyButtonHighlight forState:UIControlStateHighlighted];
-    [_singleNumberButton setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
-    [_numberListButton setBackgroundImage:_image.greyButton forState:UIControlStateNormal];
-    [_numberListButton setBackgroundImage:_image.greyButtonHighlight forState:UIControlStateHighlighted];
-    [_numberListButton setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
+    _buttonArray = [NSArray arrayWithObjects:_singleNumberButton,_numberListButton,_settingsButton, nil];
+    for (int i = 0; i < _buttonArray.count; i++) {
+        [(UIButton *)[_buttonArray objectAtIndex:i] setBackgroundImage:_image.greyButton forState:UIControlStateNormal];
+        [(UIButton *)[_buttonArray objectAtIndex:i] setBackgroundImage:_image.greyButtonHighlight forState:UIControlStateHighlighted];
+        [(UIButton *)[_buttonArray objectAtIndex:i] setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
+    }
     self.view.backgroundColor = [UIColor colorWithPatternImage:_image.debut_dark_background];
 }
 

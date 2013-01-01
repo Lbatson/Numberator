@@ -100,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ha4-bT-uVr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="924" y="-242"/>
+            <point key="canvasLocation" x="981" y="-437"/>
         </scene>
         <!--Number List View Controller - Number List-->
         <scene sceneID="5">
@@ -186,7 +186,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="924" y="560"/>
+            <point key="canvasLocation" x="981" y="138"/>
+        </scene>
+        <!--Settings View Controller - Settings-->
+        <scene sceneID="DfE-rD-3sR">
+            <objects>
+                <tableViewController id="nyu-Io-7oS" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="q0y-st-rli">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="SmX-ru-eu3">
+                                <rect key="frame" x="0.0" y="46" width="320" height="46"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="nyu-Io-7oS" id="Xz3-bb-Yhy"/>
+                            <outlet property="delegate" destination="nyu-Io-7oS" id="tON-to-xNx"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Settings" id="xfl-nx-gbi"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3XL-OL-Hy9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="981" y="721"/>
         </scene>
         <!--Generator Choice View Controller - Number Generator-->
         <scene sceneID="mXM-os-U94">
@@ -220,6 +250,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="nyu-Io-7oS" kind="push" id="7vk-Wh-Tf0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wk2-W9-CST">
                                 <rect key="frame" x="85" y="65" width="150" height="44"/>
@@ -243,6 +276,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="numberListButton" destination="W1A-w2-77o" id="oiC-Hv-XAl"/>
+                        <outlet property="settingsButton" destination="Lmj-Na-WYI" id="zAn-OO-XD1"/>
                         <outlet property="singleNumberButton" destination="wk2-W9-CST" id="gr1-xo-1Yl"/>
                     </connections>
                 </viewController>
@@ -276,11 +310,15 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GeneratorChoiceViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="numberListButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="settingsButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="singleNumberButton" candidateClass="UIButton"/>
             </relationships>
         </class>
         <class className="NumberListViewController" superclassName="SingleNumberViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NumberListViewController.h"/>
+        </class>
+        <class className="SettingsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
         </class>
         <class className="SingleNumberViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SingleNumberViewController.h"/>

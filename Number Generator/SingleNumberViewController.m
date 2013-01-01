@@ -62,11 +62,12 @@
         [_alert show];
     } else {
         if (_distinctSwitch.on) {
-            NSLog(@"distinct on");
+//            NSMutableArray *test = [_generator generateListOfNumberswithRangeStarting:[NSNumber numberWithFloat:[_beginRange.text floatValue]]
+//                                                                            andEnding:[NSNumber numberWithFloat:[_endRange.text floatValue]]
+//                                                                  withTotalToGenerate:10000];
         } else {
-            [self displayNumber:[_generator generateSingleNumberWithRangeStarting:
-                                 [NSNumber numberWithFloat:[_beginRange.text floatValue]] andEnding:
-                                 [NSNumber numberWithFloat:[_endRange.text floatValue]]]];
+            [self displayNumber:[_generator generateSingleNumberWithRangeStarting:[NSNumber numberWithFloat:[_beginRange.text floatValue]]
+                                                                        andEnding:[NSNumber numberWithFloat:[_endRange.text floatValue]]]];
         }
     }
 }
