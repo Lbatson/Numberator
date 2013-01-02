@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
-        <!--Single Number View Controller - Single Number-->
+        <!--Single Number View Controller - Generate Number-->
         <scene sceneID="ima-6q-qDb">
             <objects>
                 <viewController id="k7z-yJ-kGt" customClass="SingleNumberViewController" sceneMemberID="viewController">
@@ -27,7 +27,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5hA-yX-wXJ">
-                                <rect key="frame" x="77" y="139" width="172" height="53"/>
+                                <rect key="frame" x="74" y="167" width="172" height="53"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -37,14 +37,6 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Range" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JAI-gM-BY9">
                                 <rect key="frame" x="87" y="12" width="147" height="53"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <size key="shadowOffset" width="-1" height="1"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Distinct" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3ZG-oa-pur">
-                                <rect key="frame" x="70" y="226" width="94" height="53"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -71,7 +63,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="if7-IF-K2J">
                                 <rect key="frame" x="77" y="353" width="172" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Clear">
+                                <state key="normal" title="Clear All">
                                     <color key="titleColor" red="0.84374086257309944" green="0.24334351821847894" blue="0.21689745212332293" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -82,17 +74,15 @@
                                     <action selector="clearPressed:" destination="k7z-yJ-kGt" eventType="touchUpInside" id="tT0-9B-tHA"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="qMf-yZ-gMg">
-                                <rect key="frame" x="172" y="239" width="79" height="27"/>
-                            </switch>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Single Number" id="rVW-8m-dN1"/>
+                    <navigationItem key="navigationItem" title="Generate Number" id="rVW-8m-dN1">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="qhp-EM-XFS"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="beginRange" destination="Nvh-TK-umW" id="PRM-zX-cXR"/>
                         <outlet property="clearButton" destination="if7-IF-K2J" id="MRl-Vs-HTI"/>
-                        <outlet property="distinctSwitch" destination="qMf-yZ-gMg" id="AaX-aD-hN9"/>
                         <outlet property="endRange" destination="Nj0-OJ-TUy" id="i8y-Yu-jFL"/>
                         <outlet property="generateButton" destination="VDt-pZ-kKZ" id="FJq-Lk-CeL"/>
                         <outlet property="singleNumberDisplay" destination="5hA-yX-wXJ" id="lMp-HV-SOs"/>
@@ -102,7 +92,7 @@
             </objects>
             <point key="canvasLocation" x="981" y="-437"/>
         </scene>
-        <!--Number List View Controller - Number List-->
+        <!--Number List View Controller - Generate List-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="NumberListViewController" sceneMemberID="viewController">
@@ -110,30 +100,33 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="I7r-Kn-dvc">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="I7r-Kn-dvc">
                                 <rect key="frame" x="74" y="288" width="172" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Generate">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="generatePressed:" destination="2" eventType="touchUpInside" id="cNB-qT-xKd"/>
+                                    <action selector="generatePressed:" destination="2" eventType="touchUpInside" id="CkY-QW-TLx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9l8-YG-vvR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9l8-YG-vvR">
                                 <rect key="frame" x="74" y="353" width="172" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Clear Input">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Clear All">
+                                    <color key="titleColor" red="0.84374086260000003" green="0.2433435182" blue="0.2168974521" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="clearPressed:" destination="2" eventType="touchUpInside" id="NMd-oZ-bsM"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Range" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P3X-N2-Sbd">
                                 <rect key="frame" x="87" y="12" width="147" height="53"/>
@@ -158,8 +151,8 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R9m-eD-FrJ">
-                                <rect key="frame" x="77" y="139" width="172" height="53"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <rect key="frame" x="36" y="139" width="247" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -175,18 +168,53 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Number List" id="5eQ-Sk-Oar">
+                    <navigationItem key="navigationItem" title="Generate List" id="5eQ-Sk-Oar">
                         <barButtonItem key="backBarButtonItem" title="Back" id="smD-XX-vVo"/>
                     </navigationItem>
                     <connections>
                         <outlet property="beginRange" destination="XB3-km-zSW" id="qfX-EA-iQn"/>
+                        <outlet property="distinctSwitch" destination="NMJ-EJ-ht7" id="E8Z-IF-7p6"/>
                         <outlet property="endRange" destination="YkX-ig-HaJ" id="0Gf-d8-eGy"/>
                         <outlet property="singleNumberDisplay" destination="R9m-eD-FrJ" id="lgw-2c-BQK"/>
+                        <segue destination="TKV-js-nxR" kind="push" identifier="list" id="VzB-co-1jo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="981" y="138"/>
+        </scene>
+        <!--Number List Table View Controller - Number List-->
+        <scene sceneID="CNf-H1-l8n">
+            <objects>
+                <tableViewController id="TKV-js-nxR" customClass="NumberListTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="4b1-4J-TVL">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="Mmo-eU-Azd">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="TKV-js-nxR" id="lYV-KH-ivo"/>
+                            <outlet property="delegate" destination="TKV-js-nxR" id="TRk-XF-01R"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Number List" id="xwh-I1-3z4">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="sdU-rH-2zU"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="7gd-XQ-K9u"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Heu-L0-MIb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1477" y="138"/>
         </scene>
         <!--Settings View Controller - Settings-->
         <scene sceneID="DfE-rD-3sR">
@@ -212,7 +240,9 @@
                             <outlet property="delegate" destination="nyu-Io-7oS" id="tON-to-xNx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Settings" id="xfl-nx-gbi"/>
+                    <navigationItem key="navigationItem" title="Settings" id="xfl-nx-gbi">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="vU5-Py-X3a"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3XL-OL-Hy9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -314,8 +344,15 @@
                 <relationship kind="outlet" name="singleNumberButton" candidateClass="UIButton"/>
             </relationships>
         </class>
+        <class className="NumberListTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NumberListTableViewController.h"/>
+        </class>
         <class className="NumberListViewController" superclassName="SingleNumberViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NumberListViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="generatePressed:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="distinctSwitch" candidateClass="UISwitch"/>
+            </relationships>
         </class>
         <class className="SettingsViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
@@ -327,7 +364,6 @@
                 <relationship kind="action" name="generatePressed:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="beginRange" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="clearButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="distinctSwitch" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="endRange" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="generateButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="singleNumberDisplay" candidateClass="UILabel"/>

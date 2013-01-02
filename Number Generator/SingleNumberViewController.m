@@ -14,18 +14,6 @@
 
 @implementation SingleNumberViewController
 
-@synthesize beginRange = _beginRange;
-@synthesize endRange = _endRange;
-@synthesize alert = _alert;
-@synthesize singleNumberDisplay = _singleNumberDisplay;
-@synthesize distinctSwitch = _distinctSwitch;
-@synthesize generateButton = _generateButton;
-@synthesize clearButton = _clearButton;
-@synthesize singleTap = _singleTap;
-@synthesize image = _image;
-@synthesize validator = _validator;
-@synthesize generator = _generator;
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -61,14 +49,9 @@
     if (_alert) {
         [_alert show];
     } else {
-        if (_distinctSwitch.on) {
-//            NSMutableArray *test = [_generator generateListOfNumberswithRangeStarting:[NSNumber numberWithFloat:[_beginRange.text floatValue]]
-//                                                                            andEnding:[NSNumber numberWithFloat:[_endRange.text floatValue]]
-//                                                                  withTotalToGenerate:10000];
-        } else {
-            [self displayNumber:[_generator generateSingleNumberWithRangeStarting:[NSNumber numberWithFloat:[_beginRange.text floatValue]]
-                                                                        andEnding:[NSNumber numberWithFloat:[_endRange.text floatValue]]]];
-        }
+        [_generator generateSingleNumberWithRangeStarting:[NSNumber numberWithFloat:[_beginRange.text floatValue]]
+                                                andEnding:[NSNumber numberWithFloat:[_endRange.text floatValue]]];
+        [self displayNumber:_generator.singleNumber];
     }
 }
 

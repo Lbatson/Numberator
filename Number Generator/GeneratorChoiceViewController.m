@@ -14,12 +14,6 @@
 
 @implementation GeneratorChoiceViewController
 
-@synthesize singleNumberButton = _singleNumberButton;
-@synthesize numberListButton = _numberListButton;
-@synthesize settingsButton = _settingsButton;
-@synthesize buttonArray = _buttonArray;
-@synthesize image = _image;
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

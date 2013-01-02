@@ -10,4 +10,6 @@
 
 @interface NumberListViewController : SingleNumberViewController
 
+@property (weak, nonatomic) IBOutlet UISwitch *distinctSwitch;
+
 @end

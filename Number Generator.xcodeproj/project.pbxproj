@@ -32,6 +32,7 @@
 		7E3C9B611689770E003726D3 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3C9B5F1689770E003726D3 /* MainStoryboard_iPhone.storyboard */; };
 		7E3C9B641689770E003726D3 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3C9B621689770E003726D3 /* MainStoryboard_iPad.storyboard */; };
 		7E62F398169224E100401458 /* NumberListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E62F397169224E100401458 /* NumberListViewController.m */; };
+		7E68B8B116940D2900E5940D /* NumberListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E68B8B016940D2900E5940D /* NumberListTableViewController.m */; };
 		7E6E70101690F5F00031F6D3 /* Generator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6E700F1690F5F00031F6D3 /* Generator.m */; };
 		7EE7A8D0169370E70045A6AB /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE7A8CF169370E70045A6AB /* SettingsViewController.m */; };
 		7EF027461691F92C00815B93 /* Validator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF027451691F92C00815B93 /* Validator.m */; };
@@ -71,6 +72,8 @@
 		7E3C9B631689770E003726D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		7E62F396169224E100401458 /* NumberListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberListViewController.h; sourceTree = "<group>"; };
 		7E62F397169224E100401458 /* NumberListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberListViewController.m; sourceTree = "<group>"; };
+		7E68B8AF16940D2900E5940D /* NumberListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberListTableViewController.h; sourceTree = "<group>"; };
+		7E68B8B016940D2900E5940D /* NumberListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberListTableViewController.m; sourceTree = "<group>"; };
 		7E6E700E1690F5F00031F6D3 /* Generator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Generator.h; sourceTree = "<group>"; };
 		7E6E700F1690F5F00031F6D3 /* Generator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Generator.m; sourceTree = "<group>"; };
 		7EE7A8CE169370E70045A6AB /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
@@ -156,6 +159,8 @@
 				7E0D48CD168FC4D600CB50F9 /* SingleNumberViewController.m */,
 				7E62F396169224E100401458 /* NumberListViewController.h */,
 				7E62F397169224E100401458 /* NumberListViewController.m */,
+				7E68B8AF16940D2900E5940D /* NumberListTableViewController.h */,
+				7E68B8B016940D2900E5940D /* NumberListTableViewController.m */,
 				7EE7A8CE169370E70045A6AB /* SettingsViewController.h */,
 				7EE7A8CF169370E70045A6AB /* SettingsViewController.m */,
 				7E32A8F016924C6D00BB406B /* Images */,
@@ -264,6 +269,7 @@
 				7E32A8F516924EA900BB406B /* GeneratorChoiceViewController.m in Sources */,
 				7E32A9101692733300BB406B /* Images.m in Sources */,
 				7EE7A8D0169370E70045A6AB /* SettingsViewController.m in Sources */,
+				7E68B8B116940D2900E5940D /* NumberListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

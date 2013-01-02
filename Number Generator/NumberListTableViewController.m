@@ -1,18 +1,21 @@
 //
-//  SettingsViewController.m
+//  NumberListTableViewController.m
 //  Number Generator
 //
-//  Created by Lance  on 1/1/13.
+//  Created by Lance  on 1/2/13.
 //
 //
 
-#import "SettingsViewController.h"
+#import "NumberListTableViewController.h"
 
-@interface SettingsViewController ()
+@interface NumberListTableViewController ()
+{
+    Generator *generator;
+}
 
 @end
 
-@implementation SettingsViewController
+@implementation NumberListTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -26,12 +29,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _image = [[Images alloc]init];
-    
-    self.tableView.backgroundColor = [UIColor colorWithPatternImage:_image.debut_dark_background];
-    
+    generator = [Generator sharedGenerator];
     // Uncomment the following line to preserve selection between presentations.
-    self.clearsSelectionOnViewWillAppear = NO;
+    // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
@@ -46,18 +46,18 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 3;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 3;
+    return generator.listOfNumbers.count;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    return @"Background";
+    return @"Test";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -65,20 +65,11 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
+    NSString *value = [[generator.listOfNumbers objectAtIndex:indexPath.row]stringValue];
+    cell.textLabel.text = value;
     // Configure the cell...
     
     return cell;
-}
-
-- (UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-{
-    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, tableView.sectionHeaderHeight)];
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 3, tableView.bounds.size.width - 10, 22)];
-    label.text = [tableView.dataSource tableView:tableView titleForHeaderInSection:section];
-    label.textColor = [UIColor whiteColor];
-    label.backgroundColor = [UIColor clearColor];
-    [headerView addSubview:label];
-    return headerView;
 }
 
 /*

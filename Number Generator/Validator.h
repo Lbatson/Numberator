@@ -10,9 +10,6 @@
 
 @interface Validator : NSObject
 
-@property (strong, nonatomic) UIAlertView *alert;
-@property (strong, nonatomic) NSString *alertString;
-
 - (UIAlertView *)isInputInvalidforBegin:(NSString *)begin andEnd:(NSString *)end;
 
 @end

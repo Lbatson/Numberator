@@ -9,14 +9,14 @@
 #import "Validator.h"
 
 @implementation Validator
-
-@synthesize alert = _alert;
-@synthesize alertString = _alertString;
+{
+    UIAlertView *alert;
+    NSString *alertString;
+}
 
 - (id)init
 {
     if (self = [super init]){
-        // Additional setup for validator class
     }
     return self;
 }
@@ -81,21 +81,21 @@
 {
     switch (alertNum) {
         case 0:
-            _alertString = @"Enter values for range";
+            alertString = @"Enter values for range";
             break;
         case 1:
-            _alertString = @"Invalid numbers for range";
+            alertString = @"Invalid numbers for range";
             break;
         case 2:
-            _alertString = @"Numbers cannot be greater than 10,000";
+            alertString = @"Numbers cannot be greater than 10,000";
             break;
         case 3:
-            _alertString = @"Range is not valid. Start of range must be smaller than end";
+            alertString = @"Range is not valid. Start of range must be smaller than end";
         default:
             break;
     }
-    _alert = [[UIAlertView alloc]initWithTitle:nil message:_alertString delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles:nil];
-    return _alert;
+    alert = [[UIAlertView alloc]initWithTitle:nil message:alertString delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles:nil];
+    return alert;
 }
 
 @end

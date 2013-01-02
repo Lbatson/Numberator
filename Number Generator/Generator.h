@@ -10,11 +10,12 @@
 
 @interface Generator: NSObject
 
-@property (nonatomic,strong) NSNumber *singleNumber;
-@property (nonatomic,strong) NSMutableArray *listOfNumbers;
+@property (strong, nonatomic) NSNumber *singleNumber;
+@property (strong, nonatomic) NSMutableArray *listOfNumbers;
 
 + (id)sharedGenerator;
-- (NSNumber *)generateSingleNumberWithRangeStarting:(NSNumber *)start andEnding:(NSNumber *)end;
-- (NSMutableArray *)generateListOfNumberswithRangeStarting:(NSNumber *)start andEnding:(NSNumber *)end withTotalToGenerate:(NSInteger)total;
+- (void)generateSingleNumberWithRangeStarting:(NSNumber *)start andEnding:(NSNumber *)end;
+- (void)generateListOfNumberswithRangeStarting:(NSNumber *)start andEnding:(NSNumber *)end withTotalToGenerate:(NSInteger)total;
+- (void)generateDistinctListOfNumberswithRangeStarting:(NSNumber *)start andEnding:(NSNumber *)end withTotalToGenerate:(NSInteger)total;
 
 @end
