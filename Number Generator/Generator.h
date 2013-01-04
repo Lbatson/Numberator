@@ -16,6 +16,6 @@
 + (id)sharedGenerator;
 - (void)generateSingleNumberWithRangeStarting:(NSNumber *)start andEnding:(NSNumber *)end;
 - (void)generateListOfNumberswithRangeStarting:(NSNumber *)start andEnding:(NSNumber *)end withTotalToGenerate:(NSInteger)total;
-- (void)generateDistinctListOfNumberswithRangeStarting:(NSNumber *)start andEnding:(NSNumber *)end withTotalToGenerate:(NSInteger)total;
+- (void)generateDistinctListOfNumberswithRangeStarting:(NSNumber *)start andEnding:(NSNumber *)end;
 
 @end

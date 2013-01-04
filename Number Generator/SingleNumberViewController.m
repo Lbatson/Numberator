@@ -27,25 +27,30 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    // Initialize class objects
     _image = [[Images alloc]init];
     _generator = [Generator sharedGenerator];
     _validator = [[Validator alloc]init];
+    
+    // Delegates
+    _beginRange.delegate = self;
+    _endRange.delegate = self;
+    
+    // Add gesture recognizer to remove keyboard
     _singleTap = [[UITapGestureRecognizer alloc]
                                    initWithTarget:self
                                    action:@selector(dismissKeyboard)];
     [self.view addGestureRecognizer:_singleTap];
-    [_generateButton setBackgroundImage:_image.greyButton forState:UIControlStateNormal];
-    [_generateButton setBackgroundImage:_image.greyButtonHighlight forState:UIControlStateHighlighted];
-    [_generateButton setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
-    [_clearButton setBackgroundImage:_image.greyButton forState:UIControlStateNormal];
-    [_clearButton setBackgroundImage:_image.greyButtonHighlight forState:UIControlStateHighlighted];
-    [_clearButton setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
-    self.view.backgroundColor = [UIColor colorWithPatternImage:_image.debut_dark_background];
+    
+    // View specific design
+    self.view.backgroundColor = [_image getDefaultBackground];
+    _buttonArray = [NSArray arrayWithObjects:_generateButton,_clearButton, nil];
+    [_image getDefaultButtonColors:_buttonArray];
 }
 
 - (IBAction)generatePressed:(UIButton *)sender
 {
-    _alert = [_validator isInputInvalidforBegin:_beginRange.text andEnd:_endRange.text];
+    _alert = [_validator isInputInvalidforBegin:_beginRange.text andEnd:_endRange.text withTotal:nil isDistinct:FALSE];
     if (_alert) {
         [_alert show];
     } else {

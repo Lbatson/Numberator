@@ -27,13 +27,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     _image = [[Images alloc]init];
-    _buttonArray = [NSArray arrayWithObjects:_singleNumberButton,_numberListButton,_settingsButton, nil];
-    for (int i = 0; i < _buttonArray.count; i++) {
-        [(UIButton *)[_buttonArray objectAtIndex:i] setBackgroundImage:_image.greyButton forState:UIControlStateNormal];
-        [(UIButton *)[_buttonArray objectAtIndex:i] setBackgroundImage:_image.greyButtonHighlight forState:UIControlStateHighlighted];
-        [(UIButton *)[_buttonArray objectAtIndex:i] setTitleColor:[UIColor blackColor] forState:UIControlStateHighlighted];
-    }
-    self.view.backgroundColor = [UIColor colorWithPatternImage:_image.debut_dark_background];
+    _buttonArray = [NSArray arrayWithObjects:_singleNumberButton,_numberListButton,_distinctListButton, nil];
+    [_image getDefaultButtonColors:_buttonArray];
+    self.view.backgroundColor = [_image getDefaultBackground];
 }
 
 - (void)didReceiveMemoryWarning

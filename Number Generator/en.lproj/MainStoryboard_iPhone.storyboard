@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
-        <!--Single Number View Controller - Generate Number-->
+        <!--Single Number View Controller - Single Number-->
         <scene sceneID="ima-6q-qDb">
             <objects>
                 <viewController id="k7z-yJ-kGt" customClass="SingleNumberViewController" sceneMemberID="viewController">
@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VDt-pZ-kKZ">
-                                <rect key="frame" x="77" y="288" width="172" height="44"/>
+                                <rect key="frame" x="77" y="289" width="172" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Generate">
                                     <color key="titleColor" red="0.1327942251" green="0.1327942251" blue="0.1327942251" alpha="1" colorSpace="calibratedRGB"/>
@@ -27,8 +27,8 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5hA-yX-wXJ">
-                                <rect key="frame" x="74" y="167" width="172" height="53"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <rect key="frame" x="20" y="167" width="280" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -51,12 +51,12 @@
                                 <size key="shadowOffset" width="-1" height="1"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" id="Nvh-TK-umW">
-                                <rect key="frame" x="20" y="69" width="97" height="30"/>
+                                <rect key="frame" x="20" y="69" width="116" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" id="Nj0-OJ-TUy">
-                                <rect key="frame" x="203" y="69" width="97" height="30"/>
+                                <rect key="frame" x="184" y="69" width="116" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
@@ -74,10 +74,24 @@
                                     <action selector="clearPressed:" destination="k7z-yJ-kGt" eventType="touchUpInside" id="tT0-9B-tHA"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Min" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wLh-TL-tvE">
+                                <rect key="frame" x="57" y="40" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Max" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XQg-rE-A9r">
+                                <rect key="frame" x="221" y="40" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Generate Number" id="rVW-8m-dN1">
+                    <navigationItem key="navigationItem" title="Single Number" id="rVW-8m-dN1">
                         <barButtonItem key="backBarButtonItem" title="Back" id="qhp-EM-XFS"/>
                     </navigationItem>
                     <connections>
@@ -92,7 +106,7 @@
             </objects>
             <point key="canvasLocation" x="981" y="-437"/>
         </scene>
-        <!--Number List View Controller - Generate List-->
+        <!--Number List View Controller - Number List-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="NumberListViewController" sceneMemberID="viewController">
@@ -101,10 +115,10 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="I7r-Kn-dvc">
-                                <rect key="frame" x="74" y="288" width="172" height="44"/>
+                                <rect key="frame" x="74" y="289" width="172" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Generate">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.1327942251" green="0.1327942251" blue="0.1327942251" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -125,11 +139,17 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="clearPressed:" destination="2" eventType="touchUpInside" id="NMd-oZ-bsM"/>
+                                    <action selector="clearPressed:" destination="2" eventType="touchUpInside" id="h6i-Ph-klc"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Range" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P3X-N2-Sbd">
                                 <rect key="frame" x="87" y="12" width="147" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Total" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hm0-Tq-Qzc">
+                                <rect key="frame" x="50" y="107" width="220" height="53"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -141,41 +161,47 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" id="XB3-km-zSW">
-                                <rect key="frame" x="20" y="69" width="97" height="30"/>
+                                <rect key="frame" x="20" y="69" width="116" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" id="YkX-ig-HaJ">
-                                <rect key="frame" x="205" y="69" width="97" height="30"/>
+                                <rect key="frame" x="186" y="69" width="116" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R9m-eD-FrJ">
-                                <rect key="frame" x="36" y="139" width="247" height="53"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" id="e0f-Yv-cCs">
+                                <rect key="frame" x="102" y="168" width="116" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Min" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VjV-to-Cj5">
+                                <rect key="frame" x="57" y="40" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Distinct" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4cV-oq-Ygo">
-                                <rect key="frame" x="67" y="226" width="94" height="53"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Max" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HK0-FQ-mFy">
+                                <rect key="frame" x="223" y="40" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="NMJ-EJ-ht7">
-                                <rect key="frame" x="169" y="239" width="79" height="27"/>
-                            </switch>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Generate List" id="5eQ-Sk-Oar">
+                    <navigationItem key="navigationItem" title="Number List" id="5eQ-Sk-Oar">
                         <barButtonItem key="backBarButtonItem" title="Back" id="smD-XX-vVo"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="amountToGenerate" destination="e0f-Yv-cCs" id="geO-3K-ytz"/>
                         <outlet property="beginRange" destination="XB3-km-zSW" id="qfX-EA-iQn"/>
-                        <outlet property="distinctSwitch" destination="NMJ-EJ-ht7" id="E8Z-IF-7p6"/>
+                        <outlet property="clearButton" destination="9l8-YG-vvR" id="etX-2v-ALg"/>
                         <outlet property="endRange" destination="YkX-ig-HaJ" id="0Gf-d8-eGy"/>
-                        <outlet property="singleNumberDisplay" destination="R9m-eD-FrJ" id="lgw-2c-BQK"/>
+                        <outlet property="generateButton" destination="I7r-Kn-dvc" id="cnb-Wd-aTX"/>
                         <segue destination="TKV-js-nxR" kind="push" identifier="list" id="VzB-co-1jo"/>
                     </connections>
                 </viewController>
@@ -209,44 +235,170 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Number List" id="xwh-I1-3z4">
                         <barButtonItem key="backBarButtonItem" title="Back" id="sdU-rH-2zU"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="7gd-XQ-K9u"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="7gd-XQ-K9u">
+                            <connections>
+                                <action selector="numberListActionButton:" destination="TKV-js-nxR" id="DYh-yk-pmf"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Heu-L0-MIb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1477" y="138"/>
+            <point key="canvasLocation" x="1522" y="436"/>
         </scene>
-        <!--Settings View Controller - Settings-->
-        <scene sceneID="DfE-rD-3sR">
+        <!--Information View Controller - Information-->
+        <scene sceneID="2Ys-sm-Hal">
             <objects>
-                <tableViewController id="nyu-Io-7oS" customClass="SettingsViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="q0y-st-rli">
+                <viewController id="Xsk-Rz-ugG" customClass="InformationViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="asE-fP-VGA">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="SmX-ru-eu3">
-                                <rect key="frame" x="0.0" y="46" width="320" height="46"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="10" y="1" width="300" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="nyu-Io-7oS" id="Xz3-bb-Yhy"/>
-                            <outlet property="delegate" destination="nyu-Io-7oS" id="tON-to-xNx"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Settings" id="xfl-nx-gbi">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="vU5-Py-X3a"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="NumGen v1.0" textAlignment="center" id="nfu-eq-Nag">
+                                <rect key="frame" x="14" y="20" width="293" height="39"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="1vK-e1-N93">
+                                <rect key="frame" x="14" y="60" width="293" height="322"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <mutableString key="text">- Single Number
+Enter a positive integer into the min and max fields. Press generate to display a random number for the range provided.
+
+- Number List
+Enter a positive integer into the min and max fields. Enter a total amount of numbers to generate in the total field. Press generate to display the amount of random numbers specified by total in the range provided.
+
+- Distinct List
+Enter a positive integer into the min and max fields. Press generate to display distinct random ordered list, no repeats, for the range provided.
+
+- Email Lists
+Both list options have the ability to email the generated lists. Press the action button in the upper right when viewing the list to display the Email List option. Emails are limited to send only the first 1,000 random numbers in the list.
+
+- Marking Lists
+For reference, selecting a number in the list will highlight it blue so you can keep track of where you are in the list.
+
+- Credits
+Background from Subtle Patterns http://subtlepatterns.com 
+Pattern
+http://subtlepatterns.com/http://subtlepatterns.com/triangles/
+Creative Commons License
+http://creativecommons.org
+CC BY-SA 3.0 http://creativecommons.org/licenses/by-sa/3.0/</mutableString>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Information" id="8Y7-K2-5mp">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="yCp-W5-Ewc"/>
                     </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3XL-OL-Hy9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    <connections>
+                        <outlet property="informationArea" destination="1vK-e1-N93" id="65D-aQ-Jgt"/>
+                        <outlet property="informationHeader" destination="nfu-eq-Nag" id="keE-SO-zc3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DbO-E2-6W4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="981" y="721"/>
+            <point key="canvasLocation" x="442" y="722"/>
+        </scene>
+        <!--Distinct List View Controller - Distinct List-->
+        <scene sceneID="OWA-ZK-Sce">
+            <objects>
+                <viewController id="b0j-BW-Gqg" customClass="DistinctListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a0e-lQ-is0">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="x5y-Gj-Dhe">
+                                <rect key="frame" x="77" y="289" width="172" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Generate">
+                                    <color key="titleColor" red="0.1327942251" green="0.1327942251" blue="0.1327942251" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="generatePressed:" destination="b0j-BW-Gqg" eventType="touchUpInside" id="P6T-7f-fdV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Range" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MZf-RA-iJX">
+                                <rect key="frame" x="87" y="12" width="147" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="-1" height="1"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P5s-Py-UdV">
+                                <rect key="frame" x="139" y="73" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="-1" height="1"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" id="f1D-t5-yGr">
+                                <rect key="frame" x="20" y="69" width="116" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" id="rVd-LB-CHt">
+                                <rect key="frame" x="184" y="69" width="116" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qY9-Dp-uYp">
+                                <rect key="frame" x="77" y="352" width="172" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Clear All">
+                                    <color key="titleColor" red="0.84374086260000003" green="0.2433435182" blue="0.2168974521" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearPressed:" destination="b0j-BW-Gqg" eventType="touchUpInside" id="u6k-p4-hbk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Min" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1ms-Zd-mX2">
+                                <rect key="frame" x="57" y="40" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Max" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Sjf-Fx-sA5">
+                                <rect key="frame" x="221" y="40" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Distinct List" id="eSm-HT-TaH"/>
+                    <connections>
+                        <outlet property="beginRange" destination="f1D-t5-yGr" id="nbk-iD-1Hs"/>
+                        <outlet property="clearButton" destination="qY9-Dp-uYp" id="XCy-C0-mPh"/>
+                        <outlet property="endRange" destination="rVd-LB-CHt" id="OAR-zU-uNe"/>
+                        <outlet property="generateButton" destination="x5y-Gj-Dhe" id="m10-TR-mr4"/>
+                        <segue destination="TKV-js-nxR" kind="push" identifier="list" id="fbI-P1-FA1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WCO-Kt-1M5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="981" y="722"/>
         </scene>
         <!--Generator Choice View Controller - Number Generator-->
         <scene sceneID="mXM-os-U94">
@@ -257,7 +409,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="W1A-w2-77o">
-                                <rect key="frame" x="85" y="186" width="150" height="44"/>
+                                <rect key="frame" x="85" y="158" width="150" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Number List">
                                     <color key="titleColor" red="0.1327942251" green="0.1327942251" blue="0.1327942251" alpha="1" colorSpace="calibratedRGB"/>
@@ -271,9 +423,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Lmj-Na-WYI">
-                                <rect key="frame" x="85" y="305" width="150" height="44"/>
+                                <rect key="frame" x="85" y="230" width="150" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Settings">
+                                <state key="normal" title="Distinct List">
                                     <color key="titleColor" red="0.1327942251" green="0.1327942251" blue="0.1327942251" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -281,11 +433,11 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="nyu-Io-7oS" kind="push" id="7vk-Wh-Tf0"/>
+                                    <segue destination="b0j-BW-Gqg" kind="push" id="jVN-zb-2df"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wk2-W9-CST">
-                                <rect key="frame" x="85" y="65" width="150" height="44"/>
+                                <rect key="frame" x="85" y="86" width="150" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Single Number">
                                     <color key="titleColor" red="0.10985928362573094" green="0.10985928362573094" blue="0.10985928362573094" alpha="1" colorSpace="calibratedRGB"/>
@@ -298,6 +450,21 @@
                                     <segue destination="k7z-yJ-kGt" kind="push" id="otx-AW-OCJ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="z40-dW-BsK">
+                                <rect key="frame" x="282" y="377" width="18" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Xsk-Rz-ugG" kind="push" id="ZGs-8I-mjB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
@@ -305,8 +472,8 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="ywn-eO-s9w"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="distinctListButton" destination="Lmj-Na-WYI" id="wfX-4o-1L8"/>
                         <outlet property="numberListButton" destination="W1A-w2-77o" id="oiC-Hv-XAl"/>
-                        <outlet property="settingsButton" destination="Lmj-Na-WYI" id="zAn-OO-XD1"/>
                         <outlet property="singleNumberButton" destination="wk2-W9-CST" id="gr1-xo-1Yl"/>
                     </connections>
                 </viewController>
@@ -336,12 +503,22 @@
         </scene>
     </scenes>
     <classes>
+        <class className="DistinctListViewController" superclassName="SingleNumberViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DistinctListViewController.h"/>
+        </class>
         <class className="GeneratorChoiceViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GeneratorChoiceViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="distinctListButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="numberListButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="settingsButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="singleNumberButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="InformationViewController" superclassName="GeneratorChoiceViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InformationViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="informationArea" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="informationHeader" candidateClass="UITextView"/>
             </relationships>
         </class>
         <class className="NumberListTableViewController" superclassName="UITableViewController">
@@ -351,11 +528,8 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NumberListViewController.h"/>
             <relationships>
                 <relationship kind="action" name="generatePressed:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="distinctSwitch" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="amountToGenerate" candidateClass="UITextField"/>
             </relationships>
-        </class>
-        <class className="SettingsViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SettingsViewController.h"/>
         </class>
         <class className="SingleNumberViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SingleNumberViewController.h"/>
@@ -375,4 +549,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="fbI-P1-FA1"/>
+    </inferredMetricsTieBreakers>
 </document>

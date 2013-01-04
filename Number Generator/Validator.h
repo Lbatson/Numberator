@@ -10,6 +10,6 @@
 
 @interface Validator : NSObject
 
-- (UIAlertView *)isInputInvalidforBegin:(NSString *)begin andEnd:(NSString *)end;
+- (UIAlertView *)isInputInvalidforBegin:(NSString *)begin andEnd:(NSString *)end withTotal:(NSString *)total isDistinct:(BOOL)distinct;
 
 @end

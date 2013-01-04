@@ -15,11 +15,12 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *beginRange;
 @property (weak, nonatomic) IBOutlet UITextField *endRange;
-@property (strong, nonatomic) UIAlertView *alert;
 @property (weak, nonatomic) IBOutlet UILabel *singleNumberDisplay;
 @property (weak, nonatomic) IBOutlet UIButton *generateButton;
 @property (weak, nonatomic) IBOutlet UIButton *clearButton;
+@property (strong, nonatomic) NSArray *buttonArray;
 @property (strong, nonatomic) UITapGestureRecognizer *singleTap;
+@property (strong, nonatomic) UIAlertView *alert;
 @property (strong, nonatomic) Validator *validator;
 @property (strong, nonatomic) Generator *generator;
 @property (strong, nonatomic) Images *image;
