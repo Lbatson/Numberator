@@ -28,7 +28,7 @@
     [super viewDidLoad];
     _image = [[Images alloc]init];
     
-    self.tableView.backgroundColor = [UIColor colorWithPatternImage:_image.debut_dark_background];
+    self.tableView.backgroundColor = [_image getDefaultBackground];
     
     // Uncomment the following line to preserve selection between presentations.
     self.clearsSelectionOnViewWillAppear = NO;

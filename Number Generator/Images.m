@@ -10,7 +10,6 @@
 
 @implementation Images
 
-@synthesize debut_dark_background = _debut_dark_background;
 @synthesize greyButton = _greyButton;
 @synthesize greyButtonHighlight = _greyButtonHighlight;
 
