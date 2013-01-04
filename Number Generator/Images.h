@@ -10,7 +10,6 @@
 
 @interface Images : UIImage
 
-@property (strong, nonatomic) UIImage *debut_dark_background;
 @property (strong, nonatomic) UIImage *greyButton;
 @property (strong, nonatomic) UIImage *greyButtonHighlight;
 

@@ -17,7 +17,6 @@
 - (id)init
 {
     if (self = [super init]) {
-        _debut_dark_background = [UIImage imageNamed:@"triangles.png"];
         _greyButton = [[UIImage imageNamed:@"greyButton.png"]resizableImageWithCapInsets:UIEdgeInsetsMake(18, 18, 18, 18)];
         _greyButtonHighlight = [[UIImage imageNamed:@"greyButtonHighlight.png"]resizableImageWithCapInsets:UIEdgeInsetsMake(18, 18, 18, 18)];
     }
@@ -35,7 +34,7 @@
 
 - (UIColor *)getDefaultBackground
 {
-    return [UIColor colorWithPatternImage:_debut_dark_background];
+    return [UIColor colorWithRed:47.0/255 green:47.0/255 blue:47.0/255 alpha:1.0];
 }
 
 @end
