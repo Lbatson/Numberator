@@ -48,6 +48,8 @@
             for (int i = 1; i < generator.listOfNumbers.count; i++) {
                 numberString = [numberString stringByAppendingString:[NSString stringWithFormat:@",%@",((NSNumber *)[generator.listOfNumbers objectAtIndex:i]).stringValue]];
                 if (i > 999) {
+                    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:nil message:@"Email is limited to send only the first 1,000 numbers in the list" delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles:nil];
+                    [alert show];
                     break;
                 }
             }

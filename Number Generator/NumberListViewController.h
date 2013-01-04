@@ -10,6 +10,4 @@
 
 @interface NumberListViewController : SingleNumberViewController
 
-@property (weak, nonatomic) IBOutlet UITextField *amountToGenerate;
-
 @end

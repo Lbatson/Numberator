@@ -35,6 +35,7 @@
     // Delegates
     _beginRange.delegate = self;
     _endRange.delegate = self;
+    _amountToGenerate.delegate = self;
     
     // Add gesture recognizer to remove keyboard
     _singleTap = [[UITapGestureRecognizer alloc]
@@ -46,6 +47,19 @@
     self.view.backgroundColor = [_image getDefaultBackground];
     _buttonArray = [NSArray arrayWithObjects:_generateButton,_clearButton, nil];
     [_image getDefaultButtonColors:_buttonArray];
+}
+
+- (BOOL)textField:(UITextField *) textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    
+    NSUInteger currentLength = [textField.text length];
+    NSUInteger replacementLength = [string length];
+    NSUInteger rangeLength = range.length;
+    
+    NSUInteger newLength = currentLength - rangeLength + replacementLength;
+    
+    BOOL returnKey = [string rangeOfString: @"\n"].location != NSNotFound;
+    
+    return newLength <= 9 || returnKey;
 }
 
 - (IBAction)generatePressed:(UIButton *)sender

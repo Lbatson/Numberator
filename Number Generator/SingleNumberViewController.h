@@ -15,6 +15,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *beginRange;
 @property (weak, nonatomic) IBOutlet UITextField *endRange;
+@property (weak, nonatomic) IBOutlet UITextField *amountToGenerate;
 @property (weak, nonatomic) IBOutlet UILabel *singleNumberDisplay;
 @property (weak, nonatomic) IBOutlet UIButton *generateButton;
 @property (weak, nonatomic) IBOutlet UIButton *clearButton;

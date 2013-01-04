@@ -170,12 +170,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" id="e0f-Yv-cCs">
-                                <rect key="frame" x="102" y="168" width="116" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Min" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VjV-to-Cj5">
                                 <rect key="frame" x="57" y="40" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -190,6 +184,12 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" id="bpp-tU-cgX">
+                                <rect key="frame" x="102" y="168" width="116" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
@@ -197,7 +197,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="smD-XX-vVo"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="amountToGenerate" destination="e0f-Yv-cCs" id="geO-3K-ytz"/>
+                        <outlet property="amountToGenerate" destination="bpp-tU-cgX" id="WUh-MZ-5bv"/>
                         <outlet property="beginRange" destination="XB3-km-zSW" id="qfX-EA-iQn"/>
                         <outlet property="clearButton" destination="9l8-YG-vvR" id="etX-2v-ALg"/>
                         <outlet property="endRange" destination="YkX-ig-HaJ" id="0Gf-d8-eGy"/>
@@ -279,15 +279,7 @@ Enter a positive integer into the min and max fields. Press generate to display 
 Both list options have the ability to email the generated lists. Press the action button in the upper right when viewing the list to display the Email List option. Emails are limited to send only the first 1,000 random numbers in the list.
 
 - Marking Lists
-For reference, selecting a number in the list will highlight it blue so you can keep track of where you are in the list.
-
-- Credits
-Background from Subtle Patterns http://subtlepatterns.com 
-Pattern
-http://subtlepatterns.com/http://subtlepatterns.com/triangles/
-Creative Commons License
-http://creativecommons.org
-CC BY-SA 3.0 http://creativecommons.org/licenses/by-sa/3.0/</mutableString>
+For reference, selecting a number in the list will highlight it blue so you can keep track of where you are in the list.</mutableString>
                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -505,6 +497,9 @@ CC BY-SA 3.0 http://creativecommons.org/licenses/by-sa/3.0/</mutableString>
     <classes>
         <class className="DistinctListViewController" superclassName="SingleNumberViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DistinctListViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="generatePressed:" candidateClass="UIButton"/>
+            </relationships>
         </class>
         <class className="GeneratorChoiceViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/GeneratorChoiceViewController.h"/>
@@ -523,12 +518,14 @@ CC BY-SA 3.0 http://creativecommons.org/licenses/by-sa/3.0/</mutableString>
         </class>
         <class className="NumberListTableViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NumberListTableViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="numberListActionButton:" candidateClass="UIBarButtonItem"/>
+            </relationships>
         </class>
         <class className="NumberListViewController" superclassName="SingleNumberViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NumberListViewController.h"/>
             <relationships>
                 <relationship kind="action" name="generatePressed:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="amountToGenerate" candidateClass="UITextField"/>
             </relationships>
         </class>
         <class className="SingleNumberViewController" superclassName="UIViewController">
@@ -536,6 +533,7 @@ CC BY-SA 3.0 http://creativecommons.org/licenses/by-sa/3.0/</mutableString>
             <relationships>
                 <relationship kind="action" name="clearPressed:" candidateClass="UIButton"/>
                 <relationship kind="action" name="generatePressed:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="amountToGenerate" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="beginRange" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="clearButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="endRange" candidateClass="UITextField"/>
@@ -550,6 +548,6 @@ CC BY-SA 3.0 http://creativecommons.org/licenses/by-sa/3.0/</mutableString>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="fbI-P1-FA1"/>
+        <segue reference="VzB-co-1jo"/>
     </inferredMetricsTieBreakers>
 </document>

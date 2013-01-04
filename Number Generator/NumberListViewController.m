@@ -16,13 +16,13 @@
 
 - (IBAction)generatePressed:(UIButton *)sender
 {
-    self.alert = [self.validator isInputInvalidforBegin:self.beginRange.text andEnd:self.endRange.text withTotal:_amountToGenerate.text isDistinct:FALSE];
+    self.alert = [self.validator isInputInvalidforBegin:self.beginRange.text andEnd:self.endRange.text withTotal:self.amountToGenerate.text isDistinct:FALSE];
     if (self.alert) {
         [self.alert show];
     } else {
         [self.generator generateListOfNumberswithRangeStarting:[NSNumber numberWithFloat:[self.beginRange.text floatValue]]
                                                          andEnding:[NSNumber numberWithFloat:[self.endRange.text floatValue]]
-                                               withTotalToGenerate:[_amountToGenerate.text integerValue]];
+                                               withTotalToGenerate:[self.amountToGenerate.text integerValue]];
         [self performSegueWithIdentifier:@"list" sender:nil];
     }
 }
@@ -31,8 +31,8 @@
 {
     self.beginRange.text = @"";
     self.endRange.text = @"";
+    self.amountToGenerate.text = @"";
     self.singleNumberDisplay.text = @"";
-    _amountToGenerate.text = @"";
 }
 
 @end
