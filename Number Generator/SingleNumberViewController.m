@@ -49,7 +49,13 @@
     [_image getDefaultButtonColors:_buttonArray];
 }
 
-- (BOOL)textField:(UITextField *) textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+- (BOOL)textFieldShouldReturn:(UITextField*)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     
     NSUInteger currentLength = [textField.text length];
     NSUInteger replacementLength = [string length];

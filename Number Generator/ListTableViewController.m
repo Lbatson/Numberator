@@ -8,6 +8,9 @@
 
 #import "ListTableViewController.h"
 
+#define IDIOM    UI_USER_INTERFACE_IDIOM()
+#define IPAD     UIUserInterfaceIdiomPad
+
 @interface NumberListTableViewController ()
 {
     Generator *generator;
@@ -35,7 +38,11 @@
 - (IBAction)numberListActionButton:(UIBarButtonItem *)sender
 {
     UIActionSheet *actionSheet = [[UIActionSheet alloc]initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Email List",nil];
-    [actionSheet showInView:self.view];
+    if (IDIOM == IPAD) {
+        [actionSheet showFromBarButtonItem:_actionBarButton animated:YES];
+    } else {
+        [actionSheet showInView:self.view];
+    }
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex

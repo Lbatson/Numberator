@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="IS1-vp-fZk">
-                                <rect key="frame" x="309" y="441" width="150" height="44"/>
+                                <rect key="frame" x="309" y="436" width="150" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Number List">
@@ -28,7 +28,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BIr-J5-8Ow">
-                                <rect key="frame" x="309" y="563" width="150" height="44"/>
+                                <rect key="frame" x="309" y="558" width="150" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Distinct List">
@@ -39,11 +39,11 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="tCQ-CM-qab" kind="push" id="mke-c8-F2E"/>
+                                    <segue destination="tCQ-CM-qab" kind="push" id="vDa-AU-3gR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Gw5-zZ-jIQ">
-                                <rect key="frame" x="309" y="309" width="150" height="44"/>
+                                <rect key="frame" x="309" y="314" width="150" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Single Number">
@@ -140,10 +140,10 @@ For reference, selecting a number in the list will highlight it blue so you can 
             </objects>
             <point key="canvasLocation" x="1167" y="1103"/>
         </scene>
-        <!--Table View Controller - List-->
+        <!--Number List Table View Controller - List-->
         <scene sceneID="H4q-Iu-0ji">
             <objects>
-                <tableViewController id="fxJ-7v-kBT" sceneMemberID="viewController">
+                <tableViewController id="fxJ-7v-kBT" customClass="NumberListTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="UiU-vR-Dza">
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -166,7 +166,15 @@ For reference, selecting a number in the list will highlight it blue so you can 
                     </tableView>
                     <navigationItem key="navigationItem" title="List" id="m8s-0h-30x">
                         <barButtonItem key="backBarButtonItem" title="Back" id="u7Q-ej-OkL"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="YFe-fs-7ib">
+                            <connections>
+                                <action selector="numberListActionButton:" destination="fxJ-7v-kBT" id="1xh-rl-RTa"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="actionBarButton" destination="YFe-fs-7ib" id="ak4-Qx-ZCq"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eC4-Hh-yxs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -179,12 +187,93 @@ For reference, selecting a number in the list will highlight it blue so you can 
                     <view key="view" contentMode="scaleToFill" id="G3E-Wc-juU">
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qua-TX-hBg">
+                                <rect key="frame" x="298" y="586" width="172" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Generate">
+                                    <color key="titleColor" red="0.1327942251" green="0.1327942251" blue="0.1327942251" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="generatePressed:" destination="tCQ-CM-qab" eventType="touchUpInside" id="Ix6-Ry-v30"/>
+                                    <action selector="generatePressed:" destination="2" eventType="touchUpInside" id="hQR-ge-UlX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qwA-YR-bBh">
+                                <rect key="frame" x="298" y="680" width="172" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Clear All">
+                                    <color key="titleColor" red="0.84374086260000003" green="0.2433435182" blue="0.2168974521" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearPressed:" destination="tCQ-CM-qab" eventType="touchUpInside" id="NoU-0t-aOi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Range" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QpM-VF-IIc">
+                                <rect key="frame" x="311" y="216" width="147" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="-1" height="1"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hYI-fA-0ON">
+                                <rect key="frame" x="363" y="309" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="-1" height="1"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" id="rOU-xe-PrC">
+                                <rect key="frame" x="225" y="305" width="116" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" id="BbG-Pe-s31">
+                                <rect key="frame" x="427" y="305" width="116" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Min" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ctj-b6-irm">
+                                <rect key="frame" x="262" y="276" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Max" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n22-qA-kjY">
+                                <rect key="frame" x="464" y="276" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Distinct List" id="Q3r-zs-RWp">
                         <barButtonItem key="backBarButtonItem" title="Back" id="t7m-nU-XeL"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="beginRange" destination="rOU-xe-PrC" id="qT7-IF-yn2"/>
+                        <outlet property="clearButton" destination="qwA-YR-bBh" id="y0i-z0-g4J"/>
+                        <outlet property="endRange" destination="BbG-Pe-s31" id="xy8-fL-4CY"/>
+                        <outlet property="generateButton" destination="qua-TX-hBg" id="O3W-28-9kc"/>
                         <segue destination="fxJ-7v-kBT" kind="push" identifier="list" id="TGV-F3-nvl"/>
                     </connections>
                 </viewController>
@@ -199,12 +288,106 @@ For reference, selecting a number in the list will highlight it blue so you can 
                     <view key="view" contentMode="scaleToFill" id="3dI-zw-rqc">
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1X3-5h-mWF">
+                                <rect key="frame" x="298" y="586" width="172" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Generate">
+                                    <color key="titleColor" red="0.1327942251" green="0.1327942251" blue="0.1327942251" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="generatePressed:" destination="AT2-oz-8bT" eventType="touchUpInside" id="Ghw-ly-pVg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qni-U5-bzO">
+                                <rect key="frame" x="298" y="680" width="172" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Clear All">
+                                    <color key="titleColor" red="0.84374086260000003" green="0.2433435182" blue="0.2168974521" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearPressed:" destination="AT2-oz-8bT" eventType="touchUpInside" id="Y1B-kG-11f"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Range" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sBW-Uq-TF1">
+                                <rect key="frame" x="311" y="216" width="147" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="-1" height="1"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="G9s-sG-ZDC">
+                                <rect key="frame" x="363" y="309" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="-1" height="1"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" id="mi5-zl-xtz">
+                                <rect key="frame" x="225" y="305" width="116" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" id="jhg-qe-zpl">
+                                <rect key="frame" x="427" y="305" width="116" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Min" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tml-cy-M0J">
+                                <rect key="frame" x="262" y="276" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Max" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bd5-XZ-IUY">
+                                <rect key="frame" x="464" y="276" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Total" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cGr-RW-zMc">
+                                <rect key="frame" x="274" y="378" width="220" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" id="NOj-bC-Xs2">
+                                <rect key="frame" x="326" y="434" width="116" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Number List" id="3sU-NA-juj">
                         <barButtonItem key="backBarButtonItem" title="Back" id="7cZ-RS-s5S"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="amountToGenerate" destination="NOj-bC-Xs2" id="cAQ-IR-BR3"/>
+                        <outlet property="beginRange" destination="mi5-zl-xtz" id="Yy2-tk-gkB"/>
+                        <outlet property="clearButton" destination="qni-U5-bzO" id="OYv-7T-TE6"/>
+                        <outlet property="endRange" destination="jhg-qe-zpl" id="uas-y2-61E"/>
+                        <outlet property="generateButton" destination="1X3-5h-mWF" id="Bob-vk-FL5"/>
                         <segue destination="fxJ-7v-kBT" kind="push" identifier="list" id="0v6-jx-PZs"/>
                     </connections>
                 </viewController>
@@ -235,7 +418,7 @@ For reference, selecting a number in the list will highlight it blue so you can 
                                     <action selector="generatePressed:" destination="2" eventType="touchUpInside" id="JyW-hO-a4A"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ije-TJ-iIr">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ije-TJ-iIr">
                                 <rect key="frame" x="225" y="427" width="318" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
@@ -246,7 +429,7 @@ For reference, selecting a number in the list will highlight it blue so you can 
                                 <rect key="frame" x="298" y="680" width="172" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Clear Input">
+                                <state key="normal" title="Clear All">
                                     <color key="titleColor" red="0.84374086260000003" green="0.2433435182" blue="0.2168974521" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -340,54 +523,12 @@ For reference, selecting a number in the list will highlight it blue so you can 
             <point key="canvasLocation" x="193" y="-47"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="DistinctListViewController" superclassName="SingleNumberViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DistinctListViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="generatePressed:" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="GeneratorChoiceViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GeneratorChoiceViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="distinctListButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="numberListButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="singleNumberButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="InformationViewController" superclassName="GeneratorChoiceViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/InformationViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="informationArea" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="informationHeader" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="NumberListViewController" superclassName="SingleNumberViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NumberListViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="generatePressed:" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="SingleNumberViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SingleNumberViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="clearPressed:" candidateClass="UIButton"/>
-                <relationship kind="action" name="generatePressed:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="amountToGenerate" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="beginRange" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="clearButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="endRange" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="generateButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="singleNumberDisplay" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="TGV-F3-nvl"/>
+        <segue reference="0v6-jx-PZs"/>
     </inferredMetricsTieBreakers>
 </document>
