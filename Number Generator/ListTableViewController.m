@@ -8,9 +8,6 @@
 
 #import "ListTableViewController.h"
 
-#define IDIOM    UI_USER_INTERFACE_IDIOM()
-#define IPAD     UIUserInterfaceIdiomPad
-
 @interface NumberListTableViewController ()
 {
     Generator *generator;
@@ -107,6 +104,14 @@
     // Configure the cell...
     
     return cell;
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    if (IDIOM == IPAD) {
+        return YES;
+    } else {
+        return NO;
+    }
 }
 
 @end
