@@ -110,7 +110,7 @@
     if (IDIOM == IPAD) {
         return YES;
     } else {
-        return NO;
+        return (interfaceOrientation == UIInterfaceOrientationPortrait);
     }
 }
 
