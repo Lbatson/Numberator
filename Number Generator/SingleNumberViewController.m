@@ -41,6 +41,7 @@
     _singleTap = [[UITapGestureRecognizer alloc]
                                    initWithTarget:self
                                    action:@selector(dismissKeyboard)];
+    _singleTap.cancelsTouchesInView = NO;
     [self.view addGestureRecognizer:_singleTap];
     
     // View specific design
