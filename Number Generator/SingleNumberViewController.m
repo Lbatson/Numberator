@@ -48,6 +48,9 @@
     self.view.backgroundColor = [_image getDefaultBackground];
     _buttonArray = [NSArray arrayWithObjects:_generateButton,_clearButton, nil];
     [_image getDefaultButtonColors:_buttonArray];
+    _beginRange.borderStyle = UITextBorderStyleRoundedRect;
+    _endRange.borderStyle = UITextBorderStyleRoundedRect;
+    _amountToGenerate.borderStyle = UITextBorderStyleRoundedRect;
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField*)textField
