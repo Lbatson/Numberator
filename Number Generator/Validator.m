@@ -62,7 +62,7 @@
 
 - (BOOL)numberCheck:(NSString *)string
 {
-    // Could handle negative numbers
+    // Could handle negative numbers in future release
     // NSString *regex = @"^-{0,1}[0-9]*";
     
     // Check to insure only numbers are put into text fields
@@ -86,7 +86,7 @@
 - (BOOL)limitListCheck:(NSString *)number
 {
     // Check to insure amount to generate for number list is under 100,000 and has a value
-    if ([number integerValue] <= 100000 && ![number isEqualToString:@""]) {
+    if ([number integerValue] <= MAXVAL && ![number isEqualToString:@""]) {
         return TRUE;
     }
     return FALSE;
@@ -94,7 +94,7 @@
 
 - (BOOL)limitRangeCheck:(NSString *)begin to:(NSString *)end
 {
-    if ((end.integerValue - begin.integerValue) <= 100000) {
+    if ((end.integerValue - begin.integerValue) <= MAXVAL) {
         return TRUE;
     }
     return FALSE;
@@ -114,10 +114,10 @@
             alertString = @"Range is not valid. Min must be smaller than Max";
             break;
         case 3:
-            alertString = @"Amount to generate must be greater than 0 and less than or equal to 100,000";
+            alertString = @"Amount to generate must be greater than 0 and less than or equal to 10,000";
             break;
         case 4:
-            alertString = @"Total range of numbers must be less than or equal to 100,000";
+            alertString = @"Total range of numbers must be less than or equal to 10,000";
             break;
         default:
             break;

@@ -13,4 +13,5 @@
     #import <Foundation/Foundation.h>
     #define IDIOM    UI_USER_INTERFACE_IDIOM()
     #define IPAD     UIUserInterfaceIdiomPad
+    #define MAXVAL  10000
 #endif
