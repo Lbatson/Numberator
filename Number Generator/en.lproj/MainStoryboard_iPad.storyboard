@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
     </dependencies>
     <scenes>
-        <!--Generator Choice View Controller - Number Generator-->
+        <!--Generator Choice View Controller - Numberator-->
         <scene sceneID="eD7-xB-Ujh">
             <objects>
                 <viewController id="zEr-JM-cJR" customClass="GeneratorChoiceViewController" sceneMemberID="viewController">
@@ -75,7 +75,7 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Number Generator" id="HdA-5V-Pze">
+                    <navigationItem key="navigationItem" title="Numberator" id="HdA-5V-Pze">
                         <barButtonItem key="backBarButtonItem" title="Back" id="s28-eB-t82"/>
                     </navigationItem>
                     <connections>
@@ -96,7 +96,7 @@
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="NumGen v1.0" textAlignment="center" id="NaO-G7-EE4">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Numberator v1.0" textAlignment="center" id="NaO-G7-EE4">
                                 <rect key="frame" x="20" y="20" width="728" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -266,9 +266,7 @@ For reference, selecting a number in the list will highlight it blue so you can 
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Distinct List" id="Q3r-zs-RWp">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="t7m-nU-XeL"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Distinct List" id="Q3r-zs-RWp"/>
                     <connections>
                         <outlet property="beginRange" destination="rOU-xe-PrC" id="qT7-IF-yn2"/>
                         <outlet property="clearButton" destination="qwA-YR-bBh" id="y0i-z0-g4J"/>
@@ -379,9 +377,7 @@ For reference, selecting a number in the list will highlight it blue so you can 
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Number List" id="3sU-NA-juj">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="7cZ-RS-s5S"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Number List" id="3sU-NA-juj"/>
                     <connections>
                         <outlet property="amountToGenerate" destination="NOj-bC-Xs2" id="cAQ-IR-BR3"/>
                         <outlet property="beginRange" destination="mi5-zl-xtz" id="Yy2-tk-gkB"/>
@@ -578,6 +574,6 @@ For reference, selecting a number in the list will highlight it blue so you can 
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="TGV-F3-nvl"/>
+        <segue reference="0v6-jx-PZs"/>
     </inferredMetricsTieBreakers>
 </document>

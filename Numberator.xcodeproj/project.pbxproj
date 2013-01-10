@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E01C4FD169F4C400064D6E2 /* Numberator57.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E01C4FC169F4C400064D6E2 /* Numberator57.png */; };
+		7E01C4FF169F4C4D0064D6E2 /* Numberator114.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E01C4FE169F4C4D0064D6E2 /* Numberator114.png */; };
+		7E01C501169F4C520064D6E2 /* Numberator72.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E01C500169F4C520064D6E2 /* Numberator72.png */; };
+		7E01C503169F4C540064D6E2 /* Numberator144.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E01C502169F4C540064D6E2 /* Numberator144.png */; };
 		7E0D48CE168FC4D600CB50F9 /* SingleNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D48CD168FC4D600CB50F9 /* SingleNumberViewController.m */; };
 		7E2A2E7E16967CF4007628FA /* Images.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A2E7D16967CF4007628FA /* Images.m */; };
 		7E32A8F216924C8C00BB406B /* greyButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E32A8F116924C8C00BB406B /* greyButton.png */; };
@@ -25,10 +29,6 @@
 		7E3C9B5E1689770E003726D3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E3C9B5D1689770E003726D3 /* Default-568h@2x.png */; };
 		7E3C9B611689770E003726D3 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3C9B5F1689770E003726D3 /* MainStoryboard_iPhone.storyboard */; };
 		7E3C9B641689770E003726D3 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3C9B621689770E003726D3 /* MainStoryboard_iPad.storyboard */; };
-		7E3ECCFE16978550006E0A49 /* NumGen57.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E3ECCFD16978550006E0A49 /* NumGen57.png */; };
-		7E3ECD00169785B5006E0A49 /* NumGen114.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E3ECCFF169785B5006E0A49 /* NumGen114.png */; };
-		7E3ECD02169785CD006E0A49 /* NumGen72.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E3ECD01169785CD006E0A49 /* NumGen72.png */; };
-		7E3ECD041697866D006E0A49 /* NumGen144.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E3ECD031697866D006E0A49 /* NumGen144.png */; };
 		7E62F398169224E100401458 /* NumberListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E62F397169224E100401458 /* NumberListViewController.m */; };
 		7E68B8B116940D2900E5940D /* ListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E68B8B016940D2900E5940D /* ListTableViewController.m */; };
 		7E6E70101690F5F00031F6D3 /* Generator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6E700F1690F5F00031F6D3 /* Generator.m */; };
@@ -39,6 +39,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E01C4FC169F4C400064D6E2 /* Numberator57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Numberator57.png; path = ../Numberator57.png; sourceTree = "<group>"; };
+		7E01C4FE169F4C4D0064D6E2 /* Numberator114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Numberator114.png; path = ../Numberator114.png; sourceTree = "<group>"; };
+		7E01C500169F4C520064D6E2 /* Numberator72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Numberator72.png; path = ../Numberator72.png; sourceTree = "<group>"; };
+		7E01C502169F4C540064D6E2 /* Numberator144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Numberator144.png; path = ../Numberator144.png; sourceTree = "<group>"; };
 		7E0D48CC168FC4D600CB50F9 /* SingleNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleNumberViewController.h; sourceTree = "<group>"; };
 		7E0D48CD168FC4D600CB50F9 /* SingleNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleNumberViewController.m; sourceTree = "<group>"; };
 		7E2A2E7D16967CF4007628FA /* Images.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Images.m; sourceTree = "<group>"; };
@@ -64,10 +68,6 @@
 		7E3C9B5D1689770E003726D3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7E3C9B601689770E003726D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		7E3C9B631689770E003726D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		7E3ECCFD16978550006E0A49 /* NumGen57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NumGen57.png; path = ../NumGen57.png; sourceTree = "<group>"; };
-		7E3ECCFF169785B5006E0A49 /* NumGen114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NumGen114.png; path = ../NumGen114.png; sourceTree = "<group>"; };
-		7E3ECD01169785CD006E0A49 /* NumGen72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NumGen72.png; path = ../NumGen72.png; sourceTree = "<group>"; };
-		7E3ECD031697866D006E0A49 /* NumGen144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NumGen144.png; path = ../NumGen144.png; sourceTree = "<group>"; };
 		7E62F396169224E100401458 /* NumberListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberListViewController.h; sourceTree = "<group>"; };
 		7E62F397169224E100401458 /* NumberListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberListViewController.m; sourceTree = "<group>"; };
 		7E68B8AF16940D2900E5940D /* ListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewController.h; sourceTree = "<group>"; };
@@ -105,10 +105,10 @@
 				7E32A90116925C7B00BB406B /* greyButton@2x.png */,
 				7E32A8FB169250FD00BB406B /* greyButtonHighlight.png */,
 				7E32A8FF16925C5A00BB406B /* greyButtonHighlight@2x.png */,
-				7E3ECCFD16978550006E0A49 /* NumGen57.png */,
-				7E3ECD01169785CD006E0A49 /* NumGen72.png */,
-				7E3ECCFF169785B5006E0A49 /* NumGen114.png */,
-				7E3ECD031697866D006E0A49 /* NumGen144.png */,
+				7E01C4FC169F4C400064D6E2 /* Numberator57.png */,
+				7E01C500169F4C520064D6E2 /* Numberator72.png */,
+				7E01C4FE169F4C4D0064D6E2 /* Numberator114.png */,
+				7E01C502169F4C540064D6E2 /* Numberator144.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -247,10 +247,10 @@
 				7E32A8FC169250FD00BB406B /* greyButtonHighlight.png in Resources */,
 				7E32A90016925C5A00BB406B /* greyButtonHighlight@2x.png in Resources */,
 				7E32A90216925C7B00BB406B /* greyButton@2x.png in Resources */,
-				7E3ECCFE16978550006E0A49 /* NumGen57.png in Resources */,
-				7E3ECD00169785B5006E0A49 /* NumGen114.png in Resources */,
-				7E3ECD02169785CD006E0A49 /* NumGen72.png in Resources */,
-				7E3ECD041697866D006E0A49 /* NumGen144.png in Resources */,
+				7E01C4FD169F4C400064D6E2 /* Numberator57.png in Resources */,
+				7E01C4FF169F4C4D0064D6E2 /* Numberator114.png in Resources */,
+				7E01C501169F4C520064D6E2 /* Numberator72.png in Resources */,
+				7E01C503169F4C540064D6E2 /* Numberator144.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
