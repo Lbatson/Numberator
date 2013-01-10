@@ -14,10 +14,6 @@
 		<dict>
 			<key>CFBundleIconFiles</key>
 			<array>
-				<string>NumGen57.png</string>
-				<string>NumGen114.png</string>
-				<string>NumGen72.png</string>
-				<string>NumGen144.png</string>
 				<string>Numberator57.png</string>
 				<string>Numberator114.png</string>
 				<string>Numberator72.png</string>
