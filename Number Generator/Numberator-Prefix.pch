@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'Number Generator' target in the 'Number Generator' project
+// Prefix header for all source files of the 'Numberator' target in the 'Numberator' project
 //
 
 #import <Availability.h>

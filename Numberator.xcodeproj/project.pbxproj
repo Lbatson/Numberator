@@ -49,14 +49,14 @@
 		7E32A8FF16925C5A00BB406B /* greyButtonHighlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greyButtonHighlight@2x.png"; sourceTree = "<group>"; };
 		7E32A90116925C7B00BB406B /* greyButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "greyButton@2x.png"; sourceTree = "<group>"; };
 		7E32A90E1692733300BB406B /* Images.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Images.h; sourceTree = "<group>"; };
-		7E3C9B431689770E003726D3 /* Number Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Number Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E3C9B431689770E003726D3 /* Numberator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Numberator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E3C9B471689770E003726D3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7E3C9B491689770E003726D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7E3C9B4B1689770E003726D3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		7E3C9B4F1689770E003726D3 /* Number Generator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Number Generator-Info.plist"; sourceTree = "<group>"; };
+		7E3C9B4F1689770E003726D3 /* Numberator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Numberator-Info.plist"; sourceTree = "<group>"; };
 		7E3C9B511689770E003726D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7E3C9B531689770E003726D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7E3C9B551689770E003726D3 /* Number Generator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Number Generator-Prefix.pch"; sourceTree = "<group>"; };
+		7E3C9B551689770E003726D3 /* Numberator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Numberator-Prefix.pch"; sourceTree = "<group>"; };
 		7E3C9B561689770E003726D3 /* GeneratorAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GeneratorAppDelegate.h; sourceTree = "<group>"; };
 		7E3C9B571689770E003726D3 /* GeneratorAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratorAppDelegate.m; sourceTree = "<group>"; };
 		7E3C9B591689770E003726D3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 		7E3C9B441689770E003726D3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7E3C9B431689770E003726D3 /* Number Generator.app */,
+				7E3C9B431689770E003726D3 /* Numberator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,10 +175,10 @@
 		7E3C9B4E1689770E003726D3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7E3C9B4F1689770E003726D3 /* Number Generator-Info.plist */,
+				7E3C9B4F1689770E003726D3 /* Numberator-Info.plist */,
 				7E3C9B501689770E003726D3 /* InfoPlist.strings */,
 				7E3C9B531689770E003726D3 /* main.m */,
-				7E3C9B551689770E003726D3 /* Number Generator-Prefix.pch */,
+				7E3C9B551689770E003726D3 /* Numberator-Prefix.pch */,
 				7E3C9B591689770E003726D3 /* Default.png */,
 				7E3C9B5B1689770E003726D3 /* Default@2x.png */,
 				7E3C9B5D1689770E003726D3 /* Default-568h@2x.png */,
@@ -189,9 +189,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7E3C9B421689770E003726D3 /* Number Generator */ = {
+		7E3C9B421689770E003726D3 /* Numberator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7E3C9B6A1689770E003726D3 /* Build configuration list for PBXNativeTarget "Number Generator" */;
+			buildConfigurationList = 7E3C9B6A1689770E003726D3 /* Build configuration list for PBXNativeTarget "Numberator" */;
 			buildPhases = (
 				7E3C9B3F1689770E003726D3 /* Sources */,
 				7E3C9B401689770E003726D3 /* Frameworks */,
@@ -201,9 +201,9 @@
 			);
 			dependencies = (
 			);
-			name = "Number Generator";
+			name = Numberator;
 			productName = "Number Generator";
-			productReference = 7E3C9B431689770E003726D3 /* Number Generator.app */;
+			productReference = 7E3C9B431689770E003726D3 /* Numberator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -215,7 +215,7 @@
 				CLASSPREFIX = Generator;
 				LastUpgradeCheck = 0450;
 			};
-			buildConfigurationList = 7E3C9B3D1689770E003726D3 /* Build configuration list for PBXProject "Number Generator" */;
+			buildConfigurationList = 7E3C9B3D1689770E003726D3 /* Build configuration list for PBXProject "Numberator" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -227,7 +227,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7E3C9B421689770E003726D3 /* Number Generator */,
+				7E3C9B421689770E003726D3 /* Numberator */,
 			);
 		};
 /* End PBXProject section */
@@ -361,10 +361,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Number Generator/Number Generator-Prefix.pch";
-				INFOPLIST_FILE = "Number Generator/Number Generator-Info.plist";
+				GCC_PREFIX_HEADER = "Number Generator/Numberator-Prefix.pch";
+				INFOPLIST_FILE = "Number Generator/Numberator-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Numberator;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -373,10 +373,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Number Generator/Number Generator-Prefix.pch";
-				INFOPLIST_FILE = "Number Generator/Number Generator-Info.plist";
+				GCC_PREFIX_HEADER = "Number Generator/Numberator-Prefix.pch";
+				INFOPLIST_FILE = "Number Generator/Numberator-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Numberator;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -384,7 +384,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7E3C9B3D1689770E003726D3 /* Build configuration list for PBXProject "Number Generator" */ = {
+		7E3C9B3D1689770E003726D3 /* Build configuration list for PBXProject "Numberator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7E3C9B681689770E003726D3 /* Debug */,
@@ -393,7 +393,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7E3C9B6A1689770E003726D3 /* Build configuration list for PBXNativeTarget "Number Generator" */ = {
+		7E3C9B6A1689770E003726D3 /* Build configuration list for PBXNativeTarget "Numberator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7E3C9B6B1689770E003726D3 /* Debug */,

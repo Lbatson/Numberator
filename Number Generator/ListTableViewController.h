@@ -2,7 +2,7 @@
 //  ListTableViewController.h
 //  Number Generator
 //
-//  Created by Lance  on 1/2/13.
+//  Created by Lance Batson  on 1/2/13.
 //
 //
 

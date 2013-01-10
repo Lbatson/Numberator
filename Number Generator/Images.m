@@ -2,7 +2,7 @@
 //  Images.m
 //  Number Generator
 //
-//  Created by Lance  on 12/31/12.
+//  Created by Lance Batson  on 12/31/12.
 //
 //
 

@@ -2,7 +2,7 @@
 //  DistinctListViewController.m
 //  Number Generator
 //
-//  Created by Lance  on 1/3/13.
+//  Created by Lance Batson  on 1/3/13.
 //
 //
 
