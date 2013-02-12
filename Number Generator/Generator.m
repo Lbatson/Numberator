@@ -30,7 +30,8 @@
 {
     // Returns single random number
     int range = ([end integerValue]-[start integerValue]) + 1;
-    _singleNumber = [NSNumber numberWithInt:(arc4random() % range + [start integerValue])];
+//    _singleNumber = [NSNumber numberWithInt:(arc4random() % range + [start integerValue])];
+    _singleNumber = [NSNumber numberWithInt:(arc4random_uniform(end.integerValue) % range + [start integerValue])];
 }
 
 - (void)generateListOfNumberswithRangeStarting:(NSNumber *)start andEnding:(NSNumber *)end withTotalToGenerate:(NSInteger)total
@@ -68,7 +69,7 @@
     NSInteger max = _listOfNumbers.count;
     for (NSInteger i = 0; i < max; ++i) {
         NSInteger total = max - i;
-        NSInteger random = (arc4random() % total) + i;
+        NSInteger random = (arc4random_uniform(end.integerValue) % total) + i;
         [_listOfNumbers exchangeObjectAtIndex:i withObjectAtIndex:random];
     }
 }

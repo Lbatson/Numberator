@@ -23,6 +23,10 @@
     return self;
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [self.view becomeFirstResponder];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -53,6 +57,10 @@
     _amountToGenerate.borderStyle = UITextBorderStyleRoundedRect;
 }
 
+- (BOOL)canBecomeFirstResponder {
+    return YES;
+}
+
 - (BOOL)textFieldShouldReturn:(UITextField*)textField
 {
     [textField resignFirstResponder];
@@ -81,6 +89,12 @@
         [_generator generateSingleNumberWithRangeStarting:[NSNumber numberWithFloat:[_beginRange.text floatValue]]
                                                 andEnding:[NSNumber numberWithFloat:[_endRange.text floatValue]]];
         [self displayNumber:_generator.singleNumber];
+    }
+}
+
+-(void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    if (event.subtype == UIEventSubtypeMotionShake) {
+        [self generatePressed:_generateButton];
     }
 }
 
