@@ -30,8 +30,13 @@
 {
     // Returns single random number
     int range = ([end integerValue]-[start integerValue]) + 1;
-//    _singleNumber = [NSNumber numberWithInt:(arc4random() % range + [start integerValue])];
-    _singleNumber = [NSNumber numberWithInt:(arc4random_uniform(end.integerValue) % range + [start integerValue])];
+    // Old method using arc4random
+    // _singleNumber = [NSNumber numberWithInt:(arc4random() % range + [start integerValue])];
+    if ([start integerValue] == 0) {
+        _singleNumber = [NSNumber numberWithInt:(arc4random_uniform(end.integerValue + 1) % range + [start integerValue])];
+    } else {
+        _singleNumber = [NSNumber numberWithInt:(arc4random_uniform(end.integerValue) % range + [start integerValue])];    
+    }
 }
 
 - (void)generateListOfNumberswithRangeStarting:(NSNumber *)start andEnding:(NSNumber *)end withTotalToGenerate:(NSInteger)total
