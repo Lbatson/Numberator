@@ -214,6 +214,11 @@
 			attributes = {
 				CLASSPREFIX = Generator;
 				LastUpgradeCheck = 0450;
+				TargetAttributes = {
+					7E3C9B421689770E003726D3 = {
+						DevelopmentTeam = YFYRVYRLRS;
+					};
+				};
 			};
 			buildConfigurationList = 7E3C9B3D1689770E003726D3 /* Build configuration list for PBXProject "Numberator" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -360,11 +365,14 @@
 		7E3C9B6B1689770E003726D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Number Generator/Numberator-Prefix.pch";
 				INFOPLIST_FILE = "Number Generator/Numberator-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = Numberator;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -372,12 +380,12 @@
 		7E3C9B6C1689770E003726D3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Number Generator/Numberator-Prefix.pch";
 				INFOPLIST_FILE = "Number Generator/Numberator-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = Numberator;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";

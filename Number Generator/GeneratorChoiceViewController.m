@@ -30,13 +30,13 @@
     _buttonArray = [NSArray arrayWithObjects:_singleNumberButton,_numberListButton,_distinctListButton, nil];
     [_image getDefaultButtonColors:_buttonArray];
     self.view.backgroundColor = [_image getDefaultBackground];
-}
-
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    if (IDIOM == IPAD) {
-        return YES;
+    
+    if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) {
+        // Load resources for iOS 6.1 or earlier
     } else {
-        return (interfaceOrientation == UIInterfaceOrientationPortrait);
+        // Load resources for iOS 7 or later
+        [_infoButton setTintColor:[UIColor whiteColor]];
+        [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
     }
 }
 

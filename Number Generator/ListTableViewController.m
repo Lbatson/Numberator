@@ -106,12 +106,4 @@
     return cell;
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    if (IDIOM == IPAD) {
-        return YES;
-    } else {
-        return (interfaceOrientation == UIInterfaceOrientationPortrait);
-    }
-}
-
 @end
